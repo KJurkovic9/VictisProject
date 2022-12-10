@@ -1,16 +1,16 @@
 const data = {
   products: [
     {
-      name: 'First Shoes',
-      slug: 'first-shoes',
-      category: 'Shoes',
+      name: 'First Shirt',
+      slug: 'first-shirt',
+      category: 'Shirt',
       image: '/images/shirt1.jpg',
       price: 70,
       brand: 'Nike',
       rating: 4.5,
       numReviews: 8,
       countInStock: 20,
-      description: 'A popular shoes',
+      description: 'A popular shirt',
     },
     {
       name: 'Second Shoes',
