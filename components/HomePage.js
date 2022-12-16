@@ -35,7 +35,7 @@ export default function HomePage({ title, children }) {
                   )}
                 </a>
               </Link>
-              <Link href="/Login" legacyBehavior>
+              <Link href="/login" legacyBehavior>
                 <a className="p-2">Login</a>
               </Link>
             </div>
