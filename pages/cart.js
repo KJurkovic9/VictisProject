@@ -54,7 +54,7 @@ function CartScreen() {
                             src={item.image}
                             alt={item.name}
                             width={50}
-                            height={50}
+                            height={80}
                           />
                           &nbsp;
                           {item.name}
