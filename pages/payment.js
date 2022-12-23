@@ -73,3 +73,5 @@ export default function PaymentScreen() {
     </HomePage>
   );
 }
+
+PaymentScreen.auth = true;
