@@ -1,6 +1,7 @@
 import Cookies from 'js-cookie';
 import { useRouter } from 'next/router';
 import React, { useContext, useEffect, useState } from 'react';
+import { toast } from 'react-toastify';
 import CheckoutWizard from '../components/CheckoutWizard';
 import HomePage from '../components/HomePage';
 import { Store } from '../utils/Store';
@@ -17,7 +18,7 @@ export default function PaymentScreen() {
   const submitHandler = (e) => {
     e.preventDefault();
     if (!selectedPaymentMethod) {
-      return toast.error('Payment methdo is required');
+      return toast.error('Payment method is required');
     }
     dispatch({ type: 'SAVE_PAYMENT_METHOD', payload: selectedPaymentMethod });
     Cookies.set(
