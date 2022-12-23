@@ -1,3 +1,4 @@
+import axios from 'axios';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
@@ -6,6 +7,7 @@ import React, { useContext } from 'react';
 import HomePage from '../components/HomePage';
 import { Store } from '../utils/Store';
 import dynamic from 'next/dynamic';
+import { toast } from 'react-toastify';
 
 function CartScreen() {
   const router = useRouter();
@@ -18,9 +20,15 @@ function CartScreen() {
     dispatch({ type: 'CART_REMOVE_ITEM', payload: item });
   };
 
-  const upadteCartHandler = (item, qty) => {
+  const updateCartHandler = async (item, qty) => {
     const quantity = Number(qty);
+    const { data } = await axios.get(`/api/products/${item._id}`);
+    if (data.countInStock < quantity) {
+      return toast.error('Sorry. Product is out of stock');
+    }
+
     dispatch({ type: 'CART_ADD_ITEM', payload: { ...item, quantity } });
+    toast.success('Product updated in the cart');
   };
   return (
     <HomePage title="Shopping Cart">
@@ -65,7 +73,7 @@ function CartScreen() {
                       <select
                         value={item.quantity}
                         onChange={(e) =>
-                          upadteCartHandler(item, e.target.value)
+                          updateCartHandler(item, e.target.value)
                         }
                       >
                         {[...Array(item.countInStock).keys()].map((x) => (
