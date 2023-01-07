@@ -6,7 +6,7 @@ import Cookies from 'js-cookie';
 import React, { useContext, useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 import CheckoutWizard from '../components/CheckoutWizard';
-import HomePage from '../components/HomePage';
+import Layout from '../components/Layout';
 import { getError } from '../utils/error';
 import { Store } from '../utils/Store';
 
@@ -63,7 +63,7 @@ export default function PlaceOrderScreen() {
   };
 
   return (
-    <HomePage title="Place Order">
+    <Layout title="Place Order">
       <CheckoutWizard activeStep={3} />
       <h1 className="mb-4 text-xl">Place Order</h1>
       {cartItems.length === 0 ? (
@@ -175,7 +175,7 @@ export default function PlaceOrderScreen() {
           </div>
         </div>
       )}
-    </HomePage>
+    </Layout>
   );
 }
 

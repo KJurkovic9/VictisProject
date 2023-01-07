@@ -2,7 +2,7 @@ import axios from 'axios';
 import Link from 'next/link';
 import React, { useEffect } from 'react';
 import { signIn, useSession } from 'next-auth/react';
-import HomePage from '../components/HomePage';
+import Layout from '../components/Layout';
 import { useForm } from 'react-hook-form';
 import { getError } from '../utils/error';
 import { toast } from 'react-toastify';
@@ -51,7 +51,7 @@ export default function RegisterScreen() {
   };
 
   return (
-    <HomePage title="Create Account">
+    <Layout title="Create Account">
       <form
         className="mx-auto max-w-screen-md"
         onSubmit={handleSubmit(submitHandler)}
@@ -137,6 +137,6 @@ export default function RegisterScreen() {
           <Link href={`/register?redirect=${redirect || '/'}`}>Register</Link>
         </div>
       </form>
-    </HomePage>
+    </Layout>
   );
 }

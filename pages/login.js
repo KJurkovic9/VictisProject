@@ -1,11 +1,12 @@
 import Link from 'next/link';
 import React, { useEffect } from 'react';
 import { signIn, useSession } from 'next-auth/react';
-import HomePage from '../components/HomePage';
+import Layout from '../components/Layout';
 import { useForm } from 'react-hook-form';
 import { getError } from '../utils/error';
 import { toast } from 'react-toastify';
 import { useRouter } from 'next/router';
+import Layout from '../components/Layout';
 
 export default function LoginScreen() {
   const { data: session } = useSession();
@@ -42,7 +43,7 @@ export default function LoginScreen() {
   };
 
   return (
-    <HomePage title="Login">
+    <Layout title="Login">
       <form
         className="mx-auto max-w-screen-md"
         onSubmit={handleSubmit(submitHandler)}
@@ -90,6 +91,6 @@ export default function LoginScreen() {
           <Link href={`/register?redirect=${redirect || '/'}`}>Register</Link>
         </div>
       </form>
-    </HomePage>
+    </Layout>
   );
 }

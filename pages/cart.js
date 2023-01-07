@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { XCircleIcon } from '@heroicons/react/24/outline';
 import React, { useContext } from 'react';
-import HomePage from '../components/HomePage';
+import Layout from '../components/Layout';
 import { Store } from '../utils/Store';
 import dynamic from 'next/dynamic';
 import { toast } from 'react-toastify';
@@ -31,7 +31,7 @@ function CartScreen() {
     toast.success('Product updated in the cart');
   };
   return (
-    <HomePage title="Shopping Cart">
+    <Layout title="Shopping Cart">
       <h1 className="mb-4 text-xl">Shopping Cart</h1>
       {cartItems.length === 0 ? (
         <div>
@@ -114,7 +114,7 @@ function CartScreen() {
           </div>
         </div>
       )}
-    </HomePage>
+    </Layout>
   );
 }
 

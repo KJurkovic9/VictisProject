@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import React, { useContext, useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 import CheckoutWizard from '../components/CheckoutWizard';
-import HomePage from '../components/HomePage';
+import Layout from '../components/Layout';
 import { Store } from '../utils/Store';
 
 export default function PaymentScreen() {
@@ -40,7 +40,7 @@ export default function PaymentScreen() {
   }, [paymentMethod, router, shippingAddress.address]);
 
   return (
-    <HomePage title="Payment Method">
+    <Layout title="Payment Method">
       <CheckoutWizard activeStep={2} />
       <form className="mx-auto max-w-screen-md" onSubmit={submitHandler}>
         <h1 className="mb-4 text-xl">Payment Method</h1>
@@ -71,7 +71,7 @@ export default function PaymentScreen() {
           <button className="primary-button">Next</button>
         </div>
       </form>
-    </HomePage>
+    </Layout>
   );
 }
 

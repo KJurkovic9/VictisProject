@@ -2,19 +2,19 @@ import axios from 'axios';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import React, { useContext } from 'react';
-import HomePage from '../../components/HomePage';
 import Link from 'next/link';
 import { Store } from '../../utils/Store';
 import db from '../../utils/db';
 import Product from '../../models/Product';
 import { toast } from 'react-toastify';
+import Layout from '../../components/Layout';
 
 export default function ProductScreen(props) {
   const { product } = props;
   const { state, dispatch } = useContext(Store);
   const router = useRouter();
   if (!product) {
-    return <HomePage title="Product Not Found">Product Not Found</HomePage>;
+    return <Layout title="Product Not Found">Product Not Found</Layout>;
   }
 
   const addToCartHandler = async () => {
@@ -31,7 +31,7 @@ export default function ProductScreen(props) {
   };
 
   return (
-    <HomePage title={product.name}>
+    <Layout title={product.name}>
       <div className="py-2">
         <Link href="/" legacyBehavior>
           <a>&lt; back to the products</a>
@@ -79,7 +79,7 @@ export default function ProductScreen(props) {
           </div>
         </div>
       </div>
-    </HomePage>
+    </Layout>
   );
 }
 

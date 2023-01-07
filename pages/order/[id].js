@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useReducer } from 'react';
 import { toast } from 'react-toastify';
-import HomePage from '../../components/HomePage';
+import Layout from '../../components/Layout';
 import { getError } from '../../utils/error';
 
 function reducer(state, action) {
@@ -119,7 +119,7 @@ function OrderScreen() {
   }
 
   return (
-    <HomePage title={`Order ${orderId}`}>
+    <Layout title={`Order ${orderId}`}>
       <h1 className="mb-4 text-xl">{`Order ${orderId}`}</h1>
       {loading ? (
         <div>Loading...</div>
@@ -240,7 +240,7 @@ function OrderScreen() {
           </div>
         </div>
       )}
-    </HomePage>
+    </Layout>
   );
 }
 

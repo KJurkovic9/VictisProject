@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useContext } from 'react';
 import { toast } from 'react-toastify';
-import HomePage from '../components/HomePage';
+import Layout from '../components/Layout';
 import ProductItem from '../components/ProductItem';
 import Product from '../models/Product';
 import db from '../utils/db';
@@ -25,7 +25,8 @@ export default function Home({ products }) {
     toast.success('Product added to the cart');
   };
   return (
-    <HomePage title="Home">
+    <Layout title="Home">
+      <div>tvoja keva</div>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4">
         {products.map((product) => (
           <ProductItem
@@ -35,7 +36,7 @@ export default function Home({ products }) {
           ></ProductItem>
         ))}
       </div>
-    </HomePage>
+    </Layout>
   );
 }
 
