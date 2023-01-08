@@ -38,9 +38,9 @@ export default function Layout({ title, children }) {
 
       <ToastContainer position="bottom-center" limit={1} />
 
-      <div className="flex min-h-screen flex-col justify-between">
+      <div>
         <header>
-          <nav className="flex h-16 items-center px-4 justify-between border-b border-slate-300">
+          <nav className="flex h-16 items-center px-4 justify-between border-b shadow-inner">
             <Link href="/">
               <Image
                 src="/images/logo.png"
@@ -50,7 +50,7 @@ export default function Layout({ title, children }) {
               ></Image>
             </Link>
             <Link href="/" legacyBehavior>
-              <a className="text-xl font-bold">Victis</a>
+              <a className="text-2xl font-bold ml-7">Victis</a>
             </Link>
 
             <div className="inline-grid grid-cols-2 items-center">
