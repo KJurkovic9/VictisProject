@@ -9,7 +9,7 @@ export default function Filter() {
       <Menu>
         <Menu.Button>
           Shoes
-          <ChevronDownIcon className="w-4 text-center relative inline-block"></ChevronDownIcon>
+          <ChevronDownIcon className="w-4 relative inline-block"></ChevronDownIcon>
         </Menu.Button>
         <Menu.Items>
           <Menu.Item>

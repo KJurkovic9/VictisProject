@@ -44,7 +44,7 @@ export default function ProfileScreen() {
   };
 
   return (
-    <HomePage title="Profile">
+    <Layout title="Profile">
       <form
         className="mx-auto max-w-screen-md"
         onSubmit={handleSubmit(submitHandler)}
@@ -129,7 +129,7 @@ export default function ProfileScreen() {
           <button className="primary-button">Update Profile</button>
         </div>
       </form>
-    </HomePage>
+    </Layout>
   );
 }
 
