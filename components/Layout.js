@@ -40,7 +40,7 @@ export default function Layout({ title, children }) {
 
       <div className="flex min-h-screen flex-col justify-between">
         <header>
-          <nav className="flex h-14 items-center px-4 justify-between shadow-md">
+          <nav className="flex h-16 items-center px-4 justify-between border-b border-slate-300">
             <Link href="/">
               <Image
                 src="/images/logo.png"
@@ -50,10 +50,10 @@ export default function Layout({ title, children }) {
               ></Image>
             </Link>
             <Link href="/" legacyBehavior>
-              <a className="text-lg font-bold">Victis</a>
+              <a className="text-xl font-bold">Victis</a>
             </Link>
 
-            <div className="inline-grid grid-cols-3 items-center">
+            <div className="inline-grid grid-cols-2 items-center">
               <Link href="/cart" legacyBehavior>
                 <a>
                   {cartItemsCount === 0 ? (
@@ -68,7 +68,7 @@ export default function Layout({ title, children }) {
                 'Loading'
               ) : session?.user ? (
                 <Menu as="div" className="relative inline-block">
-                  <Menu.Button className="text-blue-600">
+                  <Menu.Button className="text-blue-600 ml-0">
                     {session.user.name}
                   </Menu.Button>
                   <Menu.Items className="absolute right-0 w-56 origin-top-right bg-white shadow-lg">
@@ -98,7 +98,7 @@ export default function Layout({ title, children }) {
                 </Menu>
               ) : (
                 <Link href="/login" legacyBehavior>
-                  <a>
+                  <a className="ml-3">
                     <UserIcon className="w-6"></UserIcon>
                   </a>
                 </Link>

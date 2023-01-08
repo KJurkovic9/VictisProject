@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useContext } from 'react';
 import { toast } from 'react-toastify';
+import Filter from '../components/Filter';
 import Layout from '../components/Layout';
 import ProductItem from '../components/ProductItem';
 import Product from '../models/Product';
@@ -26,7 +27,7 @@ export default function Home({ products }) {
   };
   return (
     <Layout title="Home">
-      <div>tvoja keva</div>
+      <Filter></Filter>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4">
         {products.map((product) => (
           <ProductItem
