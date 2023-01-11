@@ -1,4 +1,3 @@
-import axios from 'axios';
 import { useContext } from 'react';
 import { toast } from 'react-toastify';
 import Filter from '../components/Filter';
