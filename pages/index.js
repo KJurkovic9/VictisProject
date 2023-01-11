@@ -12,7 +12,7 @@ export default function Home({ products }) {
   const { state, dispatch } = useContext(Store);
   const { cart } = state;
 
-  const addToCartHandler = async (product) => {
+  const addToCartHandler = (product) => {
     const existItem = cart.cartItems.find((x) => x.slug === product.slug);
     const quantity = existItem ? existItem.quantity + 1 : 1;
 
