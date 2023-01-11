@@ -1,4 +1,3 @@
-import axios from 'axios';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import React, { useContext } from 'react';
@@ -17,7 +16,7 @@ export default function ProductScreen(props) {
     return <Layout title="Product Not Found">Product Not Found</Layout>;
   }
 
-  const addToCartHandler = async () => {
+  const addToCartHandler = () => {
     const existItem = state.cart.cartItems.find((x) => x.slug === product.slug);
     const quantity = existItem ? existItem.quantity + 1 : 1;
 
