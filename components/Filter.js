@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Menu } from '@headlessui/react';
 import DropdownLink from './DropdownLink';
 import { ChevronDownIcon } from '@heroicons/react/24/outline';
