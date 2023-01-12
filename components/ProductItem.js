@@ -9,10 +9,10 @@ export default function ProductItem({ product, addToCartHandler }) {
         <a>
           <Image
             src={product.image}
-            loading="lazy"
             alt={product.name}
-            width="500"
-            height="250"
+            width={500}
+            height={250}
+            priority={true}
             className="rounded shadow object-fill h-auto w-full md:h-80 lg:h-52"
           />
         </a>

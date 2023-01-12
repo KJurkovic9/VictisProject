@@ -37,7 +37,7 @@ export default function ProductScreen(props) {
             alt={product.name}
             width={640}
             height={640}
-            layout="responsive"
+            priority={true}
           ></Image>
         </div>
         <div>
