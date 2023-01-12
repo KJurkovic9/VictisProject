@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { Store } from '../../utils/Store';
 import db from '../../utils/db';
 import Product from '../../models/Product';
-import { toast } from 'react-toastify';
 import Layout from '../../components/Layout';
 
 export default function ProductScreen(props) {
