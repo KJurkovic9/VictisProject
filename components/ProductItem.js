@@ -8,8 +8,9 @@ export default function ProductItem({ product, addToCartHandler }) {
         <a>
           <img
             src={product.image}
+            loading="eager"
             alt={product.name}
-            className="rounded shadow object-fill h-auto w-full md:h-80 lg:h-96"
+            className="rounded shadow object-fill h-auto w-full md:h-80 lg:h-52"
           />
         </a>
       </Link>
