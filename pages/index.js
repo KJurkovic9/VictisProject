@@ -1,8 +1,9 @@
+import dynamic from 'next/dynamic';
 import { useContext } from 'react';
 import { toast } from 'react-toastify';
-import Filter from '../components/Filter';
 import Layout from '../components/Layout';
-import ProductItem from '../components/ProductItem';
+const Filter = dynamic(() => import('../components/Filter'));
+const ProductItem = dynamic(() => import('../components/ProductItem'));
 import Product from '../models/Product';
 import db from '../utils/db';
 import { Store } from '../utils/Store';
