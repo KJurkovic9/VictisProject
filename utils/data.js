@@ -17,12 +17,12 @@ const data = {
   ],
   products: [
     {
-      name: 'First Shirt',
-      slug: 'first-shirt',
-      category: 'Shirt',
+      name: "YEEZY BOOST 350 V2 'MX OAT'",
+      slug: 'yeezy-boost-350-v2-mx-oat',
+      category: 'Shoes',
       image: '/images/yeezy/shoe1.png',
-      price: 70,
-      brand: 'Nike',
+      price: 179.99,
+      brand: 'Adidas',
       rating: 4.5,
       numReviews: 8,
       countInStock: 20,
