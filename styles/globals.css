@@ -52,7 +52,76 @@ textarea {
   @apply m-3 rounded-lg bg-green-100 p-3 text-green-700;
 }
 
-.filter-div {
-  margin-left: -1rem;
-  margin-right: -1rem;
+.shoes-btn {
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  top: 30%;
+  left: 10%;
+  font-weight: 600;
+  width: 160px;
+  height: 46px;
+  color: #212529;
+  outline: none;
+  border: 2px solid #343a40;
+  border-radius: 2px;
+  padding: 10px 24px;
+  background: transparent;
+  z-index: 1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.shoes-btn:after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background: #212529;
+  transition: all 0.3s ease;
+}
+.shoes-btn:hover {
+  color: #fff;
+}
+.shoes-btn:hover:after {
+  left: 0;
+  width: 100%;
+}
+
+.jerseys-btn {
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  top: 38%;
+  left: 10%;
+  font-weight: 600;
+  width: 140px;
+  height: 46px;
+  color: #212529;
+  outline: none;
+  border: 2px solid #212529;
+  border-radius: 2px;
+  padding: 10px 24px;
+  background: transparent;
+  z-index: 1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.jerseys-btn:after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background: #212529;
+  transition: all 0.3s ease;
+}
+.jerseys-btn:hover {
+  color: #fff;
+}
+.jerseys-btn:hover:after {
+  left: 0;
+  width: 100%;
 }

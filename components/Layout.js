@@ -45,8 +45,9 @@ export default function Layout({ title, children }) {
               <Image
                 src="/images/logo.png"
                 alt="logo"
-                width={40}
-                height={40}
+                width="35"
+                height="35"
+                className="ml-3"
               ></Image>
             </Link>
             <Link href="/" legacyBehavior>
@@ -107,7 +108,7 @@ export default function Layout({ title, children }) {
           </nav>
         </header>
 
-        <main className="container m-auto mt-4 px-4">{children}</main>
+        <main className="container m-auto">{children}</main>
 
         <footer className="flex h-10 justify-center items-center shadow-inner">
           <p>Copyright &copy; 2022 Victis</p>
