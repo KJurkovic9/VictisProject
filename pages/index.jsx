@@ -25,7 +25,7 @@ export default function Home({ products }) {
   return (
     <Layout title="Home">
       <Poster></Poster>
-      <ProductCategory link={'shoes.js'}></ProductCategory>
+      <ProductCategory></ProductCategory>
       {/* <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4 ml-10 mr-10">
         {products.map((product) => (
           <ProductItem

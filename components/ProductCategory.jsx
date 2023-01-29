@@ -1,16 +1,18 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import styles from './styles/productCategory.module.css';
 
 export default function ProductCategory() {
   return (
-    <div className="flex flex-row items-center justify-center mt-24 pb-12 border-b border-black">
-      <div className="flex flex-col items-center justify-center p-5 w-72 h-64 bg-slate-100 mr-8">
+    <div className="grid grid-cols-1 gap-10 md:grid-cols-3 lg:grid-cols-3 border-b border-black">
+      <div className={styles.card_shoes}>
         <Image
           alt="Yeezy Shoes"
           src="/images/shoes/shoe8.png"
-          width={240}
-          height={100}
+          width={1000}
+          height={1000}
+          className="w-52"
         />
         <div className="m-auto mb-3">
           <Link href="/shoes">
@@ -18,7 +20,7 @@ export default function ProductCategory() {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center p-5 w-72 h-64 bg-slate-100 mr-8">
+      <div className={styles.card_jerseys}>
         <Image
           alt="Jersey"
           src="/images/jerseys/jersey2.png"
@@ -33,7 +35,7 @@ export default function ProductCategory() {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center p-5 w-72 h-64 bg-slate-100">
+      <div className={styles.card_tshirts}>
         <Image
           alt="T-Shirts"
           src="/images/t-shirts/shirt18.png"
