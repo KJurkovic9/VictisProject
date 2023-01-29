@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
+import styles from './styles/tshirt-item.module.css';
 
 export default function TShirtItem({ product, addToCartHandler }) {
   return (
-    <div className="card">
+    <div className={styles.card}>
       <Link href={`/product/${product.slug}`} legacyBehavior>
         <a>
           <Image
@@ -13,24 +14,24 @@ export default function TShirtItem({ product, addToCartHandler }) {
             width={200}
             height={100}
             priority={true}
-            className="rounded m-auto h-[55%] w-[65%] md:w-full md:h-3/6"
+            className={styles.card_picture}
           />
         </a>
       </Link>
       <div className="flex flex-col items-center mt-0">
-        <div className="">
+        <div>
           <Link href={`/product/${product.slug}`} legacyBehavior>
             <a>
-              <h2 className="card-title">{product.name}</h2>
+              <h2 className={styles.card_title}>{product.name}</h2>
             </a>
           </Link>
         </div>
 
-        <div className="card-info">
-          <p className="text-lg md:text-sm lg:text-base xl:text-base text-center lg:mt-10 md:mt-5 mb-5 md:mb-1">
+        <div className={styles.card_info_div}>
+          <p className="text-sm text-center md:mt-5 mb-5 md:mb-1 lg:mt-14 ">
             {product.brand}
           </p>
-          <p className="text-lg md:text-sm lg:text-base xl:text-base">
+          <p className="text-base md:text-sm lg:text-base xl:text-base">
             ${product.price}
           </p>
           <button
