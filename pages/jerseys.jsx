@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { toast } from 'react-toastify';
 import Layout from '../components/Layout';
-import TShirtItem from '../components/TShirtItem';
+import JerseyItem from '../components/JerseyItem';
 import Product from '../models/Product';
 import db from '../utils/db';
 import { Store } from '../utils/Store';
@@ -10,7 +10,7 @@ export default function ShoesScreen({ products }) {
   const { state, dispatch } = useContext(Store);
   const { cart } = state;
 
-  const filter = products.filter((product) => product.category === 'Shoes');
+  const filter = products.filter((product) => product.category === 'Jerseys');
 
   const addToCartHandler = (product) => {
     const existItem = cart.cartItems.find((x) => x.slug === product.slug);
@@ -22,14 +22,18 @@ export default function ShoesScreen({ products }) {
   };
   return (
     <Layout>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4 ml-10 mr-10">
-        {filter.map((product) => (
-          <TShirtItem
-            product={product}
-            key={product.slug}
-            addToCartHandler={addToCartHandler}
-          ></TShirtItem>
-        ))}
+      <div className="w-11/12 m-auto">
+        <div className="w-11/12 m-auto">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4 ml-10 mr-10">
+            {filter.map((product) => (
+              <JerseyItem
+                product={product}
+                key={product.slug}
+                addToCartHandler={addToCartHandler}
+              ></JerseyItem>
+            ))}
+          </div>
+        </div>
       </div>
     </Layout>
   );
