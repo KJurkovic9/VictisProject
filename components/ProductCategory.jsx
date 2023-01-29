@@ -24,7 +24,8 @@ export default function ProductCategory() {
           src="/images/jerseys/jersey2.png"
           width={110}
           height={300}
-          className="m-auto my-3"
+          priority={true}
+          className="m-auto my-3 w-26"
         />
         <div className="m-auto mb-3">
           <Link href="jerseys">

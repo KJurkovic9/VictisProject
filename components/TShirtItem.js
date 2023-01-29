@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
 
-export default function ProductItem({ product, addToCartHandler }) {
+export default function TShirtItem({ product, addToCartHandler }) {
   return (
     <div className="card">
       <Link href={`/product/${product.slug}`} legacyBehavior>

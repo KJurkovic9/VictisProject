@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { toast } from 'react-toastify';
 import Layout from '../components/Layout';
-import TSHirtItem from '../components/TSHirtItem';
+import TShirtItem from '../components/TShirtItem';
 import Product from '../models/Product';
 import db from '../utils/db';
 import { Store } from '../utils/Store';
@@ -24,11 +24,11 @@ export default function ShoesScreen({ products }) {
     <Layout>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4 ml-10 mr-10">
         {filter.map((product) => (
-          <TSHirtItem
+          <TShirtItem
             product={product}
             key={product.slug}
             addToCartHandler={addToCartHandler}
-          ></TSHirtItem>
+          ></TShirtItem>
         ))}
       </div>
     </Layout>
