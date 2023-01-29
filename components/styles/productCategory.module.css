@@ -1,9 +1,9 @@
 .card_shoes {
-  @apply m-auto flex flex-col items-center justify-center p-5 w-64 h-56 bg-slate-100 mr-8;
+  @apply m-auto flex flex-col items-center justify-center p-5 w-64 h-56 bg-slate-100;
 }
 
 .card_jerseys {
-  @apply m-auto flex flex-col items-center justify-center p-5 w-64 h-56 bg-slate-100 mr-8;
+  @apply m-auto flex flex-col items-center justify-center p-5 w-64 h-56 bg-slate-100;
 }
 
 .card_tshirts {
