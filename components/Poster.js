@@ -14,8 +14,8 @@ export default function Poster() {
       <Image
         src="/images/poster1.png"
         alt="poster adidas"
-        width={1024}
-        height={600}
+        width={1440}
+        height={700}
         priority={true}
         className="w-full lg:h-[43rem] mb-10 md:h-80 sm:h-64"
       />

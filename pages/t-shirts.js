@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { toast } from 'react-toastify';
 import Layout from '../components/Layout';
-import ProductItem from '../components/ProductItem';
+import TShirtItem from '../components/TShirtItem';
 import Product from '../models/Product';
 import db from '../utils/db';
 import { Store } from '../utils/Store';
@@ -22,14 +22,18 @@ export default function ShoesScreen({ products }) {
   };
   return (
     <Layout>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4 ml-10 mr-10">
-        {filter.map((product) => (
-          <ProductItem
-            product={product}
-            key={product.slug}
-            addToCartHandler={addToCartHandler}
-          ></ProductItem>
-        ))}
+      <div className="w-11/12 m-auto">
+        <div className="w-11/12 m-auto">
+          <div className="grid grid-cols-1 gap-3 md:grid-cols-3 lg:grid-cols-4 ml-10 mr-10">
+            {filter.map((product) => (
+              <TShirtItem
+                product={product}
+                key={product.slug}
+                addToCartHandler={addToCartHandler}
+              ></TShirtItem>
+            ))}
+          </div>
+        </div>
       </div>
     </Layout>
   );

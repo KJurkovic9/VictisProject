@@ -19,11 +19,19 @@ a {
 }
 
 .card {
-  @apply mb-5 w-full border border-gray-200 shadow-md;
+  @apply m-auto h-[95%] w-11/12 md:w-full md:h-[22rem] lg:h-[100%] xl:h-[80%] xl:mt-5  border border-gray-200 shadow-md;
+}
+
+.card-info {
+  @apply relative flex flex-col justify-center items-center md:absolute md:mt-14 lg:absolute lg:mt-0 xl:relative;
+}
+
+.card-title {
+  @apply text-center text-lg md:text-sm lg:text-base xl:text-base md:mt-5;
 }
 
 .primary-button {
-  @apply rounded bg-amber-300 py-2 px-4 shadow outline-none hover:bg-amber-400 active:bg-amber-500;
+  @apply rounded bg-amber-300 py-2 px-4 md:px-3 md:py-[0.4rem] md:mb-3 shadow outline-none hover:bg-amber-400 active:bg-amber-500;
 }
 
 .default-button {
@@ -124,4 +132,57 @@ textarea {
 .jerseys-btn:hover:after {
   left: 0;
   width: 100%;
+}
+
+.betn {
+  background-color: #3c3c3c;
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  color: #e5e7eb;
+  display: flex;
+  font-family: ui-sans-serif, system-ui, system-ui, 'Segoe UI', 'Helvetica Neue',
+    Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: 0.6rem 1rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.betn:focus {
+  outline: 0;
+}
+
+.betn:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.betn:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+  .betn {
+    padding: 0.3rem 2.5rem;
+    font-size: 1rem;
+  }
 }

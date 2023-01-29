@@ -3,8 +3,9 @@ import { useContext } from 'react';
 import { toast } from 'react-toastify';
 import Layout from '../components/Layout';
 import Poster from '../components/Poster';
+import ProductCategory from '../components/ProductCategory';
 // const Filter = dynamic(() => import('../components/Filter'));
-const ProductItem = dynamic(() => import('../components/ProductItem'));
+const TShirtItem = dynamic(() => import('../components/TShirtItem'));
 import Product from '../models/Product';
 import db from '../utils/db';
 import { Store } from '../utils/Store';
@@ -24,7 +25,8 @@ export default function Home({ products }) {
   return (
     <Layout title="Home">
       <Poster></Poster>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4 ml-10 mr-10">
+      <ProductCategory link={'shoes.js'}></ProductCategory>
+      {/* <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4 ml-10 mr-10">
         {products.map((product) => (
           <ProductItem
             product={product}
@@ -32,7 +34,7 @@ export default function Home({ products }) {
             addToCartHandler={addToCartHandler}
           ></ProductItem>
         ))}
-      </div>
+      </div> */}
     </Layout>
   );
 }
