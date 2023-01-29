@@ -28,7 +28,7 @@ export default function TShirtItem({ product, addToCartHandler }) {
         </div>
 
         <div className={styles.card_info_div}>
-          <p className="text-sm text-center mt-1 mb-0 md:mt-5 mb-5 md:mb-1 lg:mt-14 ">
+          <p className="text-sm text-center mt-1 mb-0 md:mt-5 md:mb-1 lg:mt-14 ">
             {product.brand}
           </p>
           <p className="text-sm md:text-sm lg:text-base xl:text-base">
