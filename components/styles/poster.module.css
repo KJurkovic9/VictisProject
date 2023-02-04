@@ -1,11 +1,13 @@
 .banner {
-  @apply md:h-[25rem] md:w-full;
+  @apply w-full h-[50rem];
+  @apply md:h-[25rem];
   @apply lg:h-[35rem];
   @apply xl:h-[43.5rem];
   @apply 2xl:h-[50.5rem];
 }
 
 .bannerImg {
+  @apply h-[50rem];
   @apply md:h-[25rem];
   @apply lg:h-[35rem];
   @apply xl:h-[40.5rem] xl:w-full;
@@ -30,7 +32,7 @@
 }
 
 .slogan {
-  @apply absolute top-[100%] right-[13.8%] text-[5vw] text-[#f8f9fa];
+  @apply absolute top-[110%] right-[13.8%] text-[5vw] text-[#f8f9fa];
   font-family: 'Noto Serif Ahom', serif;
   @apply md:top-[33%] md:text-[2.2vw] md:right-[15.1%];
   @apply xl:text-[1.8vw] md:right-[15%];
@@ -38,7 +40,7 @@
 }
 
 .saleWrapper {
-  @apply absolute z-10 top-[87%] right-[30.5%];
+  @apply absolute z-10 top-[87%] right-[35.4%];
   @apply md:top-[57%] md:right-[27.8%];
   @apply 2xl:top-[70%] 2xl:right-[24.5%];
 }
