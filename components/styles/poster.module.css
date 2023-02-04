@@ -13,8 +13,7 @@
 }
 
 .title {
-  @apply absolute top-[36%] right-[15%] text-[12vw] leading-[10.5vw];
-  @apply sm:top-[45%];
+  @apply absolute top-[40%] right-[18%] text-[12vw] leading-[10.5vw];
   color: #f8f9fa;
   font-family: 'Oswald', sans-serif;
   @apply md:text-[8vw] md:leading-[6.8vw] md:top-[15.1%] md:right-[2.5%];
@@ -31,7 +30,7 @@
 }
 
 .slogan {
-  @apply absolute top-[93%] right-[13.8%] text-[5vw] text-[#f8f9fa];
+  @apply absolute top-[100%] right-[13.8%] text-[5vw] text-[#f8f9fa];
   font-family: 'Noto Serif Ahom', serif;
   @apply md:top-[33%] md:text-[2.2vw] md:right-[15.1%];
   @apply xl:text-[1.8vw] md:right-[15%];
@@ -39,7 +38,7 @@
 }
 
 .saleWrapper {
-  @apply absolute z-10 top-[78%] right-[32%];
+  @apply absolute z-10 top-[87%] right-[30.5%];
   @apply md:top-[57%] md:right-[27.8%];
   @apply 2xl:top-[70%] 2xl:right-[24.5%];
 }
@@ -73,7 +72,7 @@
 }
 
 .productsWraper {
-  @apply absolute z-10 top-[85%] right-[21.7%];
+  @apply absolute z-10 top-[94%] right-[25%];
   @apply md:top-[65%] md:right-[22.7%];
   @apply xl:top-[64%] xl:right-[23.8%];
   @apply 2xl:top-[79%] 2xl:right-[20.5%];
