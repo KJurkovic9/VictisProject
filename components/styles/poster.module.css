@@ -14,6 +14,7 @@
 
 .title {
   @apply absolute top-[36%] right-[15%] text-[12vw] leading-[10.5vw];
+  @apply sm:top-[45%];
   color: #f8f9fa;
   font-family: 'Oswald', sans-serif;
   @apply md:text-[8vw] md:leading-[6.8vw] md:top-[15.1%] md:right-[2.5%];
