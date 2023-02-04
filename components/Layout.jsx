@@ -63,7 +63,9 @@ export default function Layout({ title, children }) {
               ></Image>
             </Link>
             <Link href="/" legacyBehavior>
-              <a className="text-3xl font-bold ml-8">Victis</a>
+              <a className="absolute w-full flex justify-center text-3xl font-bold ml-8">
+                Victis
+              </a>
             </Link>
 
             <div className="inline-grid grid-cols-2 items-center">
