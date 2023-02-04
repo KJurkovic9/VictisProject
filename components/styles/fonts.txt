@@ -1,0 +1,9 @@
+Oswald - font-family: 'Oswald', sans-serif;
+
+Noto Serif Ahom - font-family: 'Noto Serif Ahom', serif;
+
+Poppins - font-family: 'Poppins', sans-serif;
+
+
+
+

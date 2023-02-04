@@ -1,11 +1,97 @@
+.mainDiv {
+  @apply grid grid-cols-1 gap-10 mt-10 pb-10 border-b border-black;
+  @apply sm:gap-1 md:grid-cols-3 md:gap-4 lg:grid-cols-3 lg:gap-4;
+}
+
 .card_shoes {
-  @apply m-auto flex flex-col items-center justify-center p-5 w-64 h-56 bg-slate-100;
+  @apply m-auto flex flex-col items-center justify-center p-5 w-52 h-44 bg-gray-100;
+  @apply md:w-44 md:h-40 md:ml-20;
+  @apply lg:ml-32 lg:w-[15rem] lg:h-44;
+  @apply xl:ml-[19rem] xl:w-64 xl:h-48;
+  @apply 2xl:ml-[19rem] 2xl:w-72 2xl:h-52;
 }
 
 .card_jerseys {
-  @apply m-auto flex flex-col items-center justify-center p-5 w-64 h-56 bg-slate-100;
+  @apply m-auto flex flex-col items-center justify-center p-5 w-52 h-44 bg-gray-100;
+  @apply md:w-44 md:h-40 md:mr-[1.7rem];
+  @apply lg:m-auto lg:w-[15rem] lg:h-44;
+  @apply xl:m-auto xl:w-64 xl:h-48;
+  @apply 2xl:m-auto 2xl:w-72 2xl:h-52;
 }
 
 .card_tshirts {
-  @apply m-auto flex flex-col items-center justify-center p-5 w-64 h-56 bg-slate-100;
+  @apply m-auto flex flex-col items-center justify-center p-5 w-52 h-44 bg-gray-100;
+  @apply md:w-44 md:h-40 md:mr-20;
+  @apply lg:absolute lg:ml-[41rem] lg:w-[15rem] lg:h-44;
+  @apply xl:absolute xl:w-64 xl:h-48 xl:ml-[55rem];
+  @apply 2xl:absolute 2xl:ml-[58rem] 2xl:w-72 2xl:h-52;
+}
+
+.betn {
+  background-color: #3c3c3c;
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  color: #e5e7eb;
+  display: flex;
+  font-family: ui-sans-serif, system-ui, system-ui, 'Segoe UI', 'Helvetica Neue',
+    Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: 0.6rem 1rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.betn:focus {
+  outline: 0;
+}
+
+.betn:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.betn:hover:after {
+  bottom: 2px;
+  left: 2px;
+  transition: all 0.2s;
+}
+
+@media (min-width: 320px) {
+  .betn {
+    padding: 0.1rem 1.5rem;
+    font-size: 0.7rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .betn {
+    padding: 0.2rem 2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .betn {
+    padding: 0.3rem 2.2rem;
+    font-size: 1rem;
+  }
 }

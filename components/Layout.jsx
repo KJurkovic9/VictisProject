@@ -34,6 +34,18 @@ export default function Layout({ title, children }) {
         <title>{title ? title + ' - Victis' : 'Victis'}</title>
         <meta name="description" content="Victis Shop" />
         <link rel="icon" href="/favicon.ico" />
+        <style>
+          @import
+          url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+        </style>
+        <style>
+          @import
+          url('https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&display=swap');
+        </style>
+        <style>
+          @import
+          url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        </style>
       </Head>
 
       <ToastContainer position="bottom-center" limit={1} />
@@ -51,7 +63,7 @@ export default function Layout({ title, children }) {
               ></Image>
             </Link>
             <Link href="/" legacyBehavior>
-              <a className="text-2xl font-bold ml-7">Victis</a>
+              <a className="text-3xl font-bold ml-8">Victis</a>
             </Link>
 
             <div className="inline-grid grid-cols-2 items-center">
@@ -108,7 +120,7 @@ export default function Layout({ title, children }) {
           </nav>
         </header>
 
-        <main className="container m-auto">{children}</main>
+        <main className="main-container m-auto">{children}</main>
 
         <footer className="flex h-10 justify-center items-center shadow-inner">
           <p>Copyright &copy; 2022 Victis</p>

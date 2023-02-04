@@ -1,6 +1,8 @@
+import { Menu } from '@headlessui/react';
 import dynamic from 'next/dynamic';
 import { useContext } from 'react';
 import { toast } from 'react-toastify';
+import Filter from '../components/Filter';
 import Layout from '../components/Layout';
 import Poster from '../components/Poster';
 import ProductCategory from '../components/ProductCategory';
@@ -24,8 +26,10 @@ export default function Home({ products }) {
   };
   return (
     <Layout title="Home">
+      <Filter></Filter>
       <Poster></Poster>
       <ProductCategory></ProductCategory>
+
       {/* <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4 ml-10 mr-10">
         {products.map((product) => (
           <ProductItem

@@ -1,0 +1,106 @@
+.banner {
+  @apply md:h-[25rem] md:w-full;
+  @apply lg:h-[35rem];
+  @apply xl:h-[43.5rem];
+  @apply 2xl:h-[50.5rem];
+}
+
+.bannerImg {
+  @apply md:h-[25rem];
+  @apply lg:h-[35rem];
+  @apply xl:h-[40.5rem] xl:w-full;
+  @apply 2xl:h-[50.5rem];
+}
+
+.title {
+  @apply absolute top-[36%] right-[15%] text-[12vw] leading-[10.5vw];
+  color: #f8f9fa;
+  font-family: 'Oswald', sans-serif;
+  @apply md:text-[8vw] md:leading-[6.8vw] md:top-[15.1%] md:right-[2.5%];
+  @apply xl:text-[7vw] xl:top-[13.5%] xl:leading-[6vw];
+  @apply 2xl:text-[6vw] 2xl:top-[23%] 2xl:leading-[5.2vw] 2xl:right-[4.5%];
+}
+
+.title span {
+  @apply text-[11.9vw] right-[2%];
+  position: inherit;
+  @apply md:text-[7.9vw];
+  @apply xl:text-[6.9vw];
+  @apply 2xl:text-[5.9vw];
+}
+
+.slogan {
+  @apply absolute top-[93%] right-[13.8%] text-[5vw] text-[#f8f9fa];
+  font-family: 'Noto Serif Ahom', serif;
+  @apply md:top-[33%] md:text-[2.2vw] md:right-[15.1%];
+  @apply xl:text-[1.8vw] md:right-[15%];
+  @apply 2xl:text-[1.5vw] 2xl:top-[44.5%] 2xl:right-[15.7%];
+}
+
+.saleWrapper {
+  @apply absolute z-10 top-[78%] right-[32%];
+  @apply md:top-[57%] md:right-[27.8%];
+  @apply 2xl:top-[70%] 2xl:right-[24.5%];
+}
+
+.saleBtn {
+  @apply w-[35vw] h-[10vw] outline-0 border border-black cursor-pointer relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  @apply md:w-[15vw] md:h-[4vw];
+  @apply xl:w-[10vw] xl:h-[3vw];
+}
+
+.saleBtn:after {
+  @apply bg-[#fffdfd] w-full absolute h-full top-[7px] left-[7px];
+  content: '';
+  z-index: -1;
+  transition: 0.15s;
+}
+
+.saleBtn:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+.saleBtn p {
+  @apply absolute top-[18%] left-[6%] text-[17px];
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif;
+  @apply xl:text-[18px];
+}
+
+.productsWraper {
+  @apply absolute z-10 top-[85%] right-[21.7%];
+  @apply md:top-[65%] md:right-[22.7%];
+  @apply xl:top-[64%] xl:right-[23.8%];
+  @apply 2xl:top-[79%] 2xl:right-[20.5%];
+}
+
+.productsBtn {
+  @apply w-[45vw] h-[10vw] outline-0 border border-black cursor-pointer relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  @apply md:w-[20vw] md:h-[4vw];
+  @apply xl:w-[14vw] xl:h-[3vw];
+}
+
+.productsBtn:after {
+  @apply bg-[#fffdfd] w-full absolute h-full top-[7px] left-[7px];
+  content: '';
+  z-index: -1;
+  transition: 0.15s;
+}
+
+.productsBtn:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+.productsBtn p {
+  @apply absolute top-[18%] left-[5%] text-[17px];
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif;
+}
