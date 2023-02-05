@@ -18,9 +18,9 @@
   @apply absolute top-[20.5rem] right-[4rem] text-[12vw] leading-[10.5vw];
   color: #f8f9fa;
   font-family: 'Oswald', sans-serif;
-  @apply md:text-[8vw] md:leading-[6.8vw] md:top-[15.1%] md:right-[2.5%];
-  @apply xl:text-[7vw] xl:top-[13.5%] xl:leading-[6vw];
-  @apply 2xl:text-[6vw] 2xl:top-[23%] 2xl:leading-[5.2vw] 2xl:right-[4.5%];
+  @apply md:text-[8vw] md:leading-[6.8vw] md:top-[7.6rem] md:right-[1.5rem];
+  @apply xl:text-[7vw] xl:top-[7.6rem] xl:leading-[6vw] xl:right-[2.2rem];
+  @apply 2xl:text-[6vw] 2xl:top-[10.5rem] 2xl:leading-[5.2vw] 2xl:right-[4.4rem];
 }
 
 .title span {
@@ -34,15 +34,16 @@
 .slogan {
   @apply absolute top-[54rem] right-[3.8rem] text-[5vw] text-[#f8f9fa];
   font-family: 'Noto Serif Ahom', serif;
-  @apply md:top-[33%] md:text-[2.2vw] md:right-[15.1%];
-  @apply xl:text-[1.8vw] md:right-[15%];
-  @apply 2xl:text-[1.5vw] 2xl:top-[44.5%] 2xl:right-[15.7%];
+  @apply md:top-[16.5rem] md:text-[2.2vw] md:right-[9.5rem];
+  @apply xl:text-[1.8vw] xl:top-[18.5rem] xl:right-[13.3rem];
+  @apply 2xl:text-[1.5vw] 2xl:top-[20.5rem] 2xl:right-[15rem];
 }
 
 .saleWrapper {
   @apply absolute z-10 top-[44rem] right-[30%];
-  @apply md:top-[57%] md:right-[27.8%];
-  @apply 2xl:top-[70%] 2xl:right-[24.5%];
+  @apply md:top-[28.5rem] md:right-[17rem];
+  @apply xl:top-[31.5rem] xl:right-[24rem];
+  @apply 2xl:top-[33rem] 2xl:right-[23rem];
 }
 
 .saleBtn {
@@ -69,19 +70,18 @@
 
 .saleBtn p {
   @apply absolute top-[18%] left-[6%] text-[17px];
-
   @apply min-[320px]:text-[14px];
-
   letter-spacing: 1px;
   font-family: 'Poppins', sans-serif;
-  @apply xl:text-[18px];
+  @apply md:text-[16px];
+  @apply xl:text-[17px];
 }
 
 .productsWraper {
   @apply absolute z-10 top-[47.5rem] right-[19.8%];
-  @apply md:top-[65%] md:right-[22.7%];
-  @apply xl:top-[64%] xl:right-[23.8%];
-  @apply 2xl:top-[79%] 2xl:right-[20.5%];
+  @apply md:top-[32.5rem] md:right-[13.8rem];
+  @apply xl:top-[35.5rem] xl:right-[20.4rem];
+  @apply 2xl:top-[37rem] 2xl:right-[19.2rem];
 }
 
 .productsBtn {
@@ -107,9 +107,9 @@
 
 .productsBtn p {
   @apply absolute top-[18%] left-[5%] text-[17px];
-
   @apply min-[320px]:text-[14px];
-
   letter-spacing: 1px;
   font-family: 'Poppins', sans-serif;
+  @apply md:text-[16px];
+  @apply xl:text-[17px];
 }
