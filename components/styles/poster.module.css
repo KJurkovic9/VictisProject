@@ -78,7 +78,7 @@
 }
 
 .productsWraper {
-  @apply absolute z-10 top-[47.5rem] right-[19.5%];
+  @apply absolute z-10 top-[47.5rem] right-[19.8%];
   @apply md:top-[65%] md:right-[22.7%];
   @apply xl:top-[64%] xl:right-[23.8%];
   @apply 2xl:top-[79%] 2xl:right-[20.5%];
