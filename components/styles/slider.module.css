@@ -1,5 +1,5 @@
 .slider_container {
-  @apply w-full h-[34rem] flex flex-col items-center;
+  @apply w-full h-[37rem] flex flex-col items-center;
   @apply min-[414px]:h-[40rem];
   @apply md:justify-center md:h-[30rem];
   @apply xl:h-[44rem];
