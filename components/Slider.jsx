@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './styles/slider.module.css';
 import data from '../utils/data';
 import Image from 'next/image';
@@ -10,9 +10,17 @@ export default function SliderShow() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [slideInOutClass, setSlideInOutClass] = useState(styles.slideIn);
   const [width, setWidth] = useState(0);
+  const observer = useRef(null);
 
   useEffect(() => {
     setWidth(window.innerWidth);
+    observer.current = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          observer.current.unobserve(entry.target);
+        }
+      });
+    });
   }, []);
 
   const handlePrevClick = () => {
@@ -60,8 +68,13 @@ export default function SliderShow() {
                       alt={list.slug}
                       width={1200}
                       height={2000}
-                      loading="lazy"
                       className={styles.image}
+                      loading="lazy"
+                      ref={(el) => {
+                        if (el) {
+                          observer.current.observe(el);
+                        }
+                      }}
                     />
                     <p className={styles.quote}>{list.quote}</p>
                   </div>
