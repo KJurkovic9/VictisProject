@@ -29,16 +29,6 @@ export default function Home({ products }) {
       <Poster></Poster>
       <ProductCategory></ProductCategory>
       <SliderShow></SliderShow>
-
-      {/* <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4 ml-10 mr-10">
-        {products.map((product) => (
-          <ProductItem
-            product={product}
-            key={product.slug}
-            addToCartHandler={addToCartHandler}
-          ></ProductItem>
-        ))}
-      </div> */}
     </Layout>
   );
 }

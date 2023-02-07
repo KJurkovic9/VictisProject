@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import styles from './styles/slider.module.css';
 import data from '../utils/data';
 import Image from 'next/image';
-import cx from 'classnames';
 
 const list = data.images;
 
@@ -11,6 +10,7 @@ export default function SliderShow() {
   const [slideInOutClass, setSlideInOutClass] = useState(styles.slideIn);
   const [width, setWidth] = useState(0);
   const observer = useRef(null);
+  const mobileObserver = useRef(null);
 
   useEffect(() => {
     setWidth(window.innerWidth);
@@ -18,6 +18,13 @@ export default function SliderShow() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           observer.current.unobserve(entry.target);
+        }
+      });
+    });
+    mobileObserver.current = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          mobileObserver.current.unobserve(entry.target);
         }
       });
     });
@@ -72,7 +79,10 @@ export default function SliderShow() {
                       loading="lazy"
                       ref={(el) => {
                         if (el) {
-                          observer.current.observe(el);
+                          width > 767 && observer.current
+                            ? observer.current.observe(el)
+                            : mobileObserver.current &&
+                              mobileObserver.current.observe(el);
                         }
                       }}
                     />
@@ -86,8 +96,15 @@ export default function SliderShow() {
                     alt={list.slug}
                     width={1200}
                     height={2000}
-                    loading="lazy"
                     className={styles.image}
+                    loading="lazy"
+                    ref={(el) => {
+                      if (el) {
+                        width < 767 && mobileObserver.current
+                          ? mobileObserver.current.observe(el)
+                          : observer.current && observer.current.observe(el);
+                      }
+                    }}
                   />
                   <p className={styles.quote}>{list.quote}</p>
                 </div>
