@@ -11,7 +11,7 @@ const SliderShow = dynamic(() => import('../components/Slider'), {
 import Product from '../models/Product';
 import db from '../utils/db';
 
-export default function Home({ products }) {
+export default function Home() {
   return (
     <Layout title="Home">
       <Filter></Filter>
