@@ -43,7 +43,7 @@
   @apply absolute z-10 top-[44rem] right-[30%];
   @apply md:top-[28.5rem] md:right-[17rem];
   @apply xl:top-[31.5rem] xl:right-[24rem];
-  @apply 2xl:top-[33rem] 2xl:right-[23rem];
+  @apply 2xl:top-[41rem] 2xl:right-[23rem];
 }
 
 .saleBtn {
@@ -81,7 +81,7 @@
   @apply absolute z-10 top-[47.5rem] right-[19.8%];
   @apply md:top-[32.5rem] md:right-[13.8rem];
   @apply xl:top-[35.5rem] xl:right-[20.4rem];
-  @apply 2xl:top-[37rem] 2xl:right-[19.2rem];
+  @apply 2xl:top-[45rem] 2xl:right-[19.2rem];
 }
 
 .productsBtn {

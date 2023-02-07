@@ -1,32 +1,38 @@
+.products {
+  @apply flex justify-center h-[52rem];
+  @apply md:w-full md:h-[16rem];
+  @apply 2xl:m-auto 2xl:w-10/12;
+}
 .mainDiv {
-  @apply grid grid-cols-1 gap-10 mt-10 pb-10 border-b border-black;
-  @apply sm:gap-1 md:grid-cols-3 md:gap-4 lg:grid-cols-3 lg:gap-4;
+  @apply flex flex-col justify-between mt-10 pb-10;
+  @apply md:flex-row md:w-[78%];
+  @apply xl:w-[73%] xl:mt-0;
+  @apply 2xl:mt-12 2xl:w-[78%];
 }
 
 .card_shoes {
-  @apply m-auto flex flex-col items-center justify-center p-5 w-52 h-44 bg-gray-100;
-  @apply md:w-44 md:h-40 md:ml-20;
-  @apply lg:ml-32 lg:w-[15rem] lg:h-44;
-  @apply xl:ml-[19rem] xl:w-64 xl:h-48;
-  @apply 2xl:ml-[19rem] 2xl:w-72 2xl:h-52;
+  @apply flex flex-col items-center justify-center p-5 w-52 h-44 bg-gray-100;
+  @apply md:w-[11.5rem] md:h-[11rem];
+  @apply xl:w-[15rem] xl:h-[12rem];
 }
 
 .card_jerseys {
-  @apply m-auto flex flex-col items-center justify-center p-5 w-52 h-44 bg-gray-100;
-  @apply md:w-44 md:h-40 md:mr-[1.7rem];
-  @apply lg:m-auto lg:w-[15rem] lg:h-44;
-  @apply xl:m-auto xl:w-64 xl:h-48;
-  @apply 2xl:m-auto 2xl:w-72 2xl:h-52;
+  @apply flex flex-col items-center justify-center p-5 w-52 h-44 bg-gray-100;
+  @apply md:w-[11.5rem] md:h-[11rem];
+  @apply xl:w-[15rem] xl:h-[12rem];
 }
 
 .card_tshirts {
-  @apply m-auto flex flex-col items-center justify-center p-5 w-52 h-44 bg-gray-100;
-  @apply md:w-44 md:h-40 md:mr-20;
-  @apply lg:absolute lg:ml-[41rem] lg:w-[15rem] lg:h-44;
-  @apply xl:absolute xl:w-64 xl:h-48 xl:ml-[55rem];
-  @apply 2xl:absolute 2xl:ml-[58rem] 2xl:w-72 2xl:h-52;
+  @apply flex flex-col items-center justify-center p-5 w-52 h-44 bg-gray-100;
+  @apply md:w-[11.5rem] md:h-[11rem];
+  @apply xl:w-[15rem] xl:h-[12rem];
 }
 
+.card_caps {
+  @apply flex flex-col items-center justify-center p-5 w-52 h-44 bg-gray-100;
+  @apply md:w-[11.5rem] md:h-[11rem];
+  @apply xl:w-[15rem] xl:h-[12rem];
+}
 .betn {
   background-color: #3c3c3c;
   border: 0 solid #e5e7eb;

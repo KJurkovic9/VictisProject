@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from './styles/filter.module.css';
 import Link from 'next/link';
-import cx from 'classnames';
 
 export default function Filter() {
   const [isOpen, setOpen] = useState(true);
@@ -9,7 +8,6 @@ export default function Filter() {
 
   useEffect(() => {
     setWidth(window.innerWidth);
-    window.addEventListener('resize', () => setWidth(window.innerWidth));
   }, []);
 
   return (

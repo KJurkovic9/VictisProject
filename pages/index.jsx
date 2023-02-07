@@ -6,6 +6,7 @@ import Layout from '../components/Layout';
 const Poster = dynamic(() => import('../components/Poster'));
 const ProductCategory = dynamic(() => import('../components/ProductCategory'));
 const Filter = dynamic(() => import('../components/Filter'));
+const SliderShow = dynamic(() => import('../components/Slider'));
 import Product from '../models/Product';
 import db from '../utils/db';
 import { Store } from '../utils/Store';
@@ -27,6 +28,7 @@ export default function Home({ products }) {
       <Filter></Filter>
       <Poster></Poster>
       <ProductCategory></ProductCategory>
+      <SliderShow></SliderShow>
 
       {/* <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4 ml-10 mr-10">
         {products.map((product) => (
