@@ -25,8 +25,8 @@ const data = {
         'Confidence is the most important thing, more important than how you look.',
     },
     {
-      image: '/images/list/m-fooladi-11955129.webp',
-      slug: 'm-fooladi-11955129',
+      image: '/images/list/m-fooladi-119551.webp',
+      slug: 'm-fooladi-119551',
       quote:
         "Clothes aren't going to change the world, the women who wear them will.",
     },
