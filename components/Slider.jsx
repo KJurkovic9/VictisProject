@@ -95,7 +95,7 @@ export default function SliderShow() {
                     src={list.image}
                     alt={list.slug}
                     width={400}
-                    height={700}
+                    height={800}
                     className={styles.image}
                     loading="lazy"
                     ref={(el) => {
