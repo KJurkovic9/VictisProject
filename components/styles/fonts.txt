@@ -4,6 +4,17 @@ Noto Serif Ahom - font-family: 'Noto Serif Ahom', serif;
 
 Poppins - font-family: 'Poppins', sans-serif;
 
+const { state, dispatch } = useContext(Store);
+  const { cart } = state;
 
+
+  const addToCartHandler = (product) => {
+    const existItem = cart.cartItems.find((x) => x.slug === product.slug);
+    const quantity = existItem ? existItem.quantity + 1 : 1;
+
+    dispatch({ type: 'CART_ADD_ITEM', payload: { ...product, quantity } });
+
+    toast.success('Product added to the cart');
+  };
 
 
