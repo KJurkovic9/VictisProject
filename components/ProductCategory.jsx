@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styles from './styles/productCategory.module.css';
 
 export default function ProductCategory() {
@@ -11,8 +11,9 @@ export default function ProductCategory() {
           <Image
             alt="Yeezy Shoes"
             src="/images/shoes/shoe8.png"
-            width={1000}
-            height={1000}
+            width={700}
+            height={100}
+            priority
             className="w-40 md:mb-16 2xl:w-[12rem] 2xl:mb-20"
           />
           <div className="m-auto mb-3 md:absolute md:mt-20">
@@ -26,8 +27,8 @@ export default function ProductCategory() {
             alt="Jersey"
             src="/images/jerseys/jersey2.png"
             width={110}
-            height={300}
-            priority={true}
+            height={100}
+            priority
             className="m-auto mb-14 w-20 md:w-[4.5rem] md:mt-1 2xl:w-[5rem] 2xl:-mt-2"
           />
           <div className="m-auto absolute mt-[4.5rem]">
@@ -40,8 +41,9 @@ export default function ProductCategory() {
           <Image
             alt="T-Shirts"
             src="/images/t-shirts/shirt18.png"
-            width={140}
-            height={80}
+            width={310}
+            height={100}
+            priority
             className="m-auto w-24 mb-[3.7rem] md:w-[5.5rem] 2xl:w-[6.5rem] 2xl:mb-[4rem]"
           />
           <div className="m-auto absolute mt-[4.5rem]">
@@ -54,8 +56,9 @@ export default function ProductCategory() {
           <Image
             alt="T-Shirts"
             src="/images/caps/cap1.png"
-            width={140}
-            height={80}
+            width={150}
+            height={100}
+            priority
             className="m-auto w-24 mb-[3.7rem] md:w-[5.5rem] 2xl:w-[6.5rem] 2xl:mb-[4rem]"
           />
           <div className="m-auto absolute mt-[4.5rem]">

@@ -28,6 +28,7 @@ export default function Layout({ title, children }) {
     dispatch({ type: 'CART_RESET' });
     signOut({ callbackUrl: '/login' });
   };
+
   return (
     <>
       <Head>
