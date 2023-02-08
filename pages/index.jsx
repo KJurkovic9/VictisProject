@@ -1,6 +1,6 @@
 import React, { useState, useEffect, lazy, Suspense } from 'react';
 import dynamic from 'next/dynamic';
-import Layout from '../components/Layout';
+const Layout = dynamic(() => import('../components/Layout'), { ssr: false });
 const Poster = dynamic(() => import('../components/Poster'), { ssr: false });
 const ProductCategory = dynamic(() => import('../components/ProductCategory'), {
   ssr: false,

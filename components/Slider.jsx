@@ -21,6 +21,7 @@ export default function SliderShow() {
         }
       });
     });
+
     mobileObserver.current = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
