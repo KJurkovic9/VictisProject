@@ -1,0 +1,90 @@
+.container {
+  @apply w-full flex items-center flex-col justify-center pb-20;
+  background: linear-gradient(180deg, #ffffff 0%, #e6e6e6 50%);
+}
+.main_container {
+  @apply grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-3 flex justify-between w-[65%];
+}
+
+.title {
+  @apply text-[1.7rem] mb-10 mt-5;
+}
+
+.conatiner_divs {
+  @apply flex flex-col justify-center items-center border border-black bg-[#fff] w-[20rem];
+}
+
+.image_div {
+  @apply mt-10 mb-5;
+}
+
+.btn_div {
+  @apply h-1/2 flex items-end;
+}
+
+.image {
+  @apply duration-[1000ms];
+  @apply 2xl:w-[12rem];
+}
+
+.image:hover {
+  @apply scale-[1.1];
+}
+
+.image_shirt {
+  @apply duration-[1000ms];
+  @apply 2xl:w-[10rem] 2xl:h-[10rem];
+}
+
+.image_shirt:hover {
+  @apply scale-[1.1];
+}
+
+.image_cap {
+  @apply duration-[1000ms];
+  @apply 2xl:w-[8rem] mt-[20%];
+}
+
+.image_cap:hover {
+  @apply scale-[1.1];
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 20px 0;
+  position: relative;
+  color: #ecf0f1;
+  border: 1px solid #000;
+  font-size: 15px;
+  color: #2b3b4b;
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn:before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-color: #000;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  color: #ecf0f1;
+}
+
+.btn:hover:before {
+  top: 0;
+}

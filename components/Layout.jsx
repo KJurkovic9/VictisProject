@@ -58,8 +58,9 @@ export default function Layout({ title, children }) {
               <Image
                 src="/images/logo.png"
                 alt="logo"
-                width="35"
-                height="35"
+                width={35}
+                height={35}
+                priority
                 className="ml-3"
               ></Image>
             </Link>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, lazy, Suspense } from 'react';
+import React from 'react';
 import dynamic from 'next/dynamic';
 const Layout = dynamic(() => import('../components/Layout'), { ssr: false });
 const Poster = dynamic(() => import('../components/Poster'), { ssr: false });
@@ -7,8 +7,9 @@ const ProductCategory = dynamic(() => import('../components/ProductCategory'), {
 });
 const Filter = dynamic(() => import('../components/Filter'), { ssr: false });
 const SliderShow = dynamic(() => import('../components/Slider'));
-import Product from '../models/Product';
-import db from '../utils/db';
+// import Product from '../models/Product';
+// import db from '../utils/db';
+// import HighlightProducts from '../components/HighlightProducts';
 
 export default function Home() {
   return (
@@ -17,17 +18,18 @@ export default function Home() {
       <Poster></Poster>
       <ProductCategory></ProductCategory>
       <SliderShow></SliderShow>
+      {/* <HighlightProducts></HighlightProducts> */}
     </Layout>
   );
 }
 
-export async function getServerSideProps(context) {
-  await db.connect();
-  const products = await Product.find().lean();
+// export async function getServerSideProps(context) {
+//   await db.connect();
+//   const products = await Product.find().lean();
 
-  return {
-    props: {
-      products: products.map(db.convertDocToObj),
-    },
-  };
-}
+//   return {
+//     props: {
+//       products: products.map(db.convertDocToObj),
+//     },
+//   };
+// }

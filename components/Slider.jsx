@@ -77,7 +77,7 @@ export default function SliderShow() {
                       width={1200}
                       height={2000}
                       className={styles.image}
-                      loading="lazy"
+                      priority={true}
                       ref={(el) => {
                         if (el) {
                           width > 767 && observer.current
@@ -98,7 +98,7 @@ export default function SliderShow() {
                     width={400}
                     height={800}
                     className={styles.image}
-                    loading="lazy"
+                    priority={true}
                     ref={(el) => {
                       if (el) {
                         width < 767 && mobileObserver.current
