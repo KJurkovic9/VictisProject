@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useContext } from 'react';
 import { toast } from 'react-toastify';
 import { Store } from '../utils/Store';
@@ -13,19 +14,7 @@ const images = [
   { link: '/images/shoes/shoe12.png', slug: 'shoe12' },
 ];
 
-export default function HighlightProducts({ addToCartHandler }) {
-  // const { state, dispatch } = useContext(Store);
-  // const { cart } = state;
-
-  // const addToCartHandler = (product) => {
-  //   const existItem = cart.cartItems.find((x) => x.slug === product.slug);
-  //   const quantity = existItem ? existItem.quantity + 1 : 1;
-
-  //   dispatch({ type: 'CART_ADD_ITEM', payload: { ...product, quantity } });
-
-  //   toast.success('Product added to the cart');
-  // };
-
+export default function HighlightProducts() {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>MONTH PRODUCTS</h1>
@@ -71,9 +60,11 @@ export default function HighlightProducts({ addToCartHandler }) {
               )}
             </div>
             <div className={styles.btn_div}>
-              <button onClick={addToCartHandler} className={styles.btn}>
-                Add To Cart
-              </button>
+              <Link href="/onsale" legacyBehavior>
+                <div className={styles.btn}>
+                  <a>View More</a>
+                </div>
+              </Link>
             </div>
           </div>
         ))}

@@ -65,7 +65,7 @@ export default function Layout({ title, children }) {
               ></Image>
             </Link>
             <Link href="/" legacyBehavior>
-              <a className="text-3xl font-bold ml-8">Victis</a>
+              <a className="text-[2.8rem] font-bold ml-10">Victis</a>
             </Link>
 
             <div className="inline-grid grid-cols-2 items-center">
@@ -124,8 +124,46 @@ export default function Layout({ title, children }) {
 
         <main className="main-container m-auto">{children}</main>
 
-        <footer className="flex h-10 justify-center items-center shadow-inner">
-          <p>Copyright &copy; 2022 Victis</p>
+        <footer className="flex flex-row justify-center items-center shadow-inner w-[100%] p-10">
+          <div className="flex flex-col justify-center items-center h-[6rem]">
+            <div>
+              <p className="text-[2rem] font-bold">FOLLOW US</p>
+            </div>
+            <div className="flex justify-between w-[90%]">
+              <Image
+                src="/images/icons/instagram.png"
+                alt="instagram icon"
+                width={30}
+                height={30}
+              />
+              <Image
+                src="/images/icons/facebook.png"
+                alt="facebook icon"
+                width={30}
+                height={30}
+              />
+              <Image
+                src="/images/icons/twitter.png"
+                alt="twitter icon"
+                width={30}
+                height={30}
+              />
+            </div>
+          </div>
+          <div className="flex w-[35%] justify-between ml-10 mr-10">
+            <div className="pr-10 border-r border-black">
+              <Link href="/terms-and-conditions">Terms and Conditions</Link>
+            </div>
+            <div className="pr-10 border-r border-black">
+              <Link href="/privacy-policy">Privacy Policy</Link>
+            </div>
+            <div className="pr-10 border-r border-black">
+              <p>Cookie Settings</p>
+            </div>
+          </div>
+          <div>
+            <p>Copyright &copy; 2022 Victis</p>
+          </div>
         </footer>
       </div>
     </>

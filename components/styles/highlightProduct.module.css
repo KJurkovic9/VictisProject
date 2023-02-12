@@ -1,21 +1,29 @@
 .container {
   @apply w-full flex items-center flex-col justify-center pb-20;
   background: linear-gradient(180deg, #ffffff 0%, #e6e6e6 50%);
+  @apply md:mt-16;
 }
 .main_container {
-  @apply grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-3 flex justify-between w-[65%];
+  @apply grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-3;
+  @apply 2xl:w-[65%];
 }
 
 .title {
-  @apply text-[1.7rem] mb-10 mt-5;
+  @apply text-[2rem] mb-[2.5rem] -mt-10;
+  font-family: 'Oswald', sans-serif;
 }
 
 .conatiner_divs {
-  @apply flex flex-col justify-center items-center border border-black bg-[#fff] w-[20rem];
+  @apply flex flex-col justify-center items-center border border-black bg-[#fff] w-[10rem] h-[17rem];
+  @apply min-[375px]:w-[10.5rem];
+  @apply md:w-[15rem];
+  @apply xl:w-[20rem];
+  @apply 2xl:w-full 2xl:h-full;
 }
 
 .image_div {
-  @apply mt-10 mb-5;
+  @apply mt-[5.7rem] mb-5;
+  @apply 2xl:mt-10 2xl:mb-5;
 }
 
 .btn_div {
@@ -23,40 +31,44 @@
 }
 
 .image {
+  @apply w-[9rem] -mt-5;
+  @apply min-[375px]:w-[10rem];
   @apply duration-[1000ms];
-  @apply 2xl:w-[12rem];
+  @apply 2xl:w-[12rem] 2xl:mt-8;
 }
 
 .image:hover {
-  @apply scale-[1.1];
+  @apply 2xl:scale-[1.1];
 }
 
 .image_shirt {
+  @apply w-[8rem] h-[9rem] -mt-[4.5rem];
   @apply duration-[1000ms];
-  @apply 2xl:w-[10rem] 2xl:h-[10rem];
+  @apply 2xl:w-[10rem] 2xl:h-[10rem] 2xl:mt-0;
 }
 
 .image_shirt:hover {
-  @apply scale-[1.1];
+  @apply 2xl:scale-[1.1];
 }
 
 .image_cap {
+  @apply w-[8rem] -mt-7;
   @apply duration-[1000ms];
-  @apply 2xl:w-[8rem] mt-[20%];
+  @apply 2xl:w-[8rem] 2xl:mt-[30%];
 }
 
 .image_cap:hover {
-  @apply scale-[1.1];
+  @apply 2xl:scale-[1.1];
 }
 
 .btn {
   padding: 10px 20px;
   margin: 20px 0;
   position: relative;
-  color: #ecf0f1;
+  color: #000;
+  cursor: pointer;
   border: 1px solid #000;
   font-size: 15px;
-  color: #2b3b4b;
   overflow: hidden;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -77,14 +89,14 @@
   left: 0;
   background-color: #000;
   -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
+  -o-transitions: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-}
-
-.btn:hover {
-  color: #ecf0f1;
 }
 
 .btn:hover:before {
   top: 0;
+}
+
+.btn:hover a {
+  color: #cdcccc;
 }
