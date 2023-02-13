@@ -124,12 +124,12 @@ export default function Layout({ title, children }) {
 
         <main className="main-container m-auto">{children}</main>
 
-        <footer className="flex flex-row justify-center items-center shadow-inner w-[100%] p-10">
-          <div className="flex flex-col justify-center items-center h-[6rem]">
+        <footer className="footer-container">
+          <div className="follow-us ">
             <div>
-              <p className="text-[2rem] font-bold">FOLLOW US</p>
+              <p className="flwtxt ">FOLLOW US</p>
             </div>
-            <div className="flex justify-between w-[90%]">
+            <div className="media-icons">
               <Image
                 src="/images/icons/instagram.png"
                 alt="instagram icon"
@@ -150,14 +150,14 @@ export default function Layout({ title, children }) {
               />
             </div>
           </div>
-          <div className="flex w-[35%] justify-between ml-10 mr-10">
-            <div className="pr-10 border-r border-black">
+          <div className="footer-links">
+            <div className="terms">
               <Link href="/terms-and-conditions">Terms and Conditions</Link>
             </div>
-            <div className="pr-10 border-r border-black">
+            <div className="privacy">
               <Link href="/privacy-policy">Privacy Policy</Link>
             </div>
-            <div className="pr-10 border-r border-black">
+            <div className="cookie">
               <p>Cookie Settings</p>
             </div>
           </div>

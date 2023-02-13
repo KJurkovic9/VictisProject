@@ -49,3 +49,40 @@ textarea {
 .alert-succes {
   @apply m-3 rounded-lg bg-green-100 p-3 text-green-700;
 }
+
+.footer-container {
+  @apply flex flex-col justify-center items-center shadow-inner p-5 w-[100%];
+  @apply 2xl:flex-row 2xl:p-10;
+}
+
+.follow-us {
+  @apply flex flex-col justify-center items-center h-[6rem];
+}
+
+.flwtxt {
+  @apply text-[2rem] font-bold;
+}
+
+.media-icons {
+  @apply flex justify-between w-[90%];
+}
+
+.footer-links {
+  @apply flex w-[35%] justify-center;
+  @apply 2xl:ml-10 2xl:mr-10 2xl:justify-between;
+}
+
+.terms {
+  @apply pr-5 border-r pl-5 border-black;
+  @apply 2xl:pr-10 2xl:pl-0;
+}
+
+.privacy {
+  @apply pr-5 border-r pl-5 border-black;
+  @apply 2xl:pr-10 2xl:pl-0;
+}
+
+.cookie {
+  @apply pr-5 pl-5;
+  @apply 2xl:pr-10 2xl:border-r 2xl:border-black 2xl:pl-0;
+}
