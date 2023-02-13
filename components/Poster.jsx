@@ -52,8 +52,8 @@ const PosterImage = () => {
       <Image
         src={`/images/${src}`}
         alt="Victis Banner"
-        width={1300}
-        height={100}
+        width={1920}
+        height={960}
         className={styles.bannerImg}
       />
     </div>

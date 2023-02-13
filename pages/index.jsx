@@ -12,6 +12,12 @@ const SliderShow = dynamic(() => import('../components/Slider'));
 import HighlightProducts from '../components/HighlightProducts';
 
 export default function Home({ products }) {
+  // const [loadedProducts, setLoadedProducts] = useState([]);
+
+  // useEffect(() => {
+  //   setLoadedProducts(products);
+  // }, []);
+
   return (
     <Layout title="Home">
       <Filter></Filter>
@@ -22,3 +28,14 @@ export default function Home({ products }) {
     </Layout>
   );
 }
+
+// export async function getServerSideProps(context) {
+//   await db.connect();
+//   const products = await Product.find().lean();
+
+//   return {
+//     props: {
+//       products: products.map(db.convertDocToObj),
+//     },
+//   };
+// }
