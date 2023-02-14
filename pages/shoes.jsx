@@ -41,7 +41,8 @@ export default function ShoesScreen({ products }) {
 
 export async function getServerSideProps() {
   await db.connect();
-  const products = await Product.find().lean();
+  const products = await Product.find({ category: 'Shoes' }).lean();
+
   return {
     props: {
       products: products.map(db.convertDocToObj),

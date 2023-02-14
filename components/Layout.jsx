@@ -162,7 +162,7 @@ export default function Layout({ title, children }) {
             </div>
           </div>
           <div>
-            <p>Copyright &copy; 2022 Victis</p>
+            <p>Copyright &copy; 2023 Victis</p>
           </div>
         </footer>
       </div>
