@@ -8,7 +8,6 @@ const productSchema = new mongoose.Schema(
     image: { type: String, required: true },
     oldPrice: { type: Number, required: true },
     newPrice: { type: Number, required: true },
-    new: { type: Boolean, required: false },
     brand: { type: String, required: true },
     rating: { type: Number, required: true, default: 0 },
     numReviews: { type: Number, required: true, default: 0 },

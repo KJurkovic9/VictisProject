@@ -11,6 +11,8 @@ const SliderShow = dynamic(() => import('../components/Slider'), {
 });
 import db from '../utils/db';
 import HighlightProducts from '../components/HighlightProducts';
+import Product from '../models/Product';
+
 export default function Home() {
   return (
     <Layout title="Home">
@@ -21,4 +23,14 @@ export default function Home() {
       <HighlightProducts></HighlightProducts>
     </Layout>
   );
+}
+
+export async function getServerSideProps() {
+  await db.connect();
+  const products = await Product.find().lean();
+  return {
+    props: {
+      products: products.map(db.convertDocToObj),
+    },
+  };
 }
