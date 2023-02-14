@@ -18,7 +18,7 @@ export default function PlaceOrderScreen() {
   const round2 = (num) => Math.round(num * 100 + Number.EPSILON) / 100;
 
   const itemsPrice = round2(
-    cartItems.reduce((a, c) => a + c.quantity * c.price, 0)
+    cartItems.reduce((a, c) => a + c.quantity * c.newPrice, 0)
   );
 
   const shippingPrice = itemsPrice > 200 ? 0 : 15;
@@ -120,9 +120,9 @@ export default function PlaceOrderScreen() {
                         </Link>
                       </td>
                       <td className=" p-5 text-right">{item.quantity}</td>
-                      <td className="p-5 text-right">${item.price}</td>
+                      <td className="p-5 text-right">${item.newPrice}</td>
                       <td className="p-5 text-right">
-                        ${item.quantity * item.price}
+                        ${item.quantity * item.newPrice}
                       </td>
                     </tr>
                   ))}
