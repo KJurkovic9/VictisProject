@@ -9,7 +9,7 @@ const Filter = dynamic(() => import('../components/Filter'), { ssr: false });
 const SliderShow = dynamic(() => import('../components/Slider'), {
   ssr: false,
 });
-
+import db from '../utils/db';
 import HighlightProducts from '../components/HighlightProducts';
 export default function Home() {
   return (
