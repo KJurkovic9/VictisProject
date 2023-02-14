@@ -32,10 +32,10 @@ export default function TShirtItem({ product, addToCartHandler }) {
             {product.brand}
           </p>
           <p className="text-sm md:text-sm lg:text-base xl:text-base">
-            ${product.price}
+            ${product.newPrice}
           </p>
           <button
-            className="primary-button"
+            className={styles.primary_button}
             type="button"
             onClick={() => addToCartHandler(product)}
           >

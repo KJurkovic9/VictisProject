@@ -10,7 +10,7 @@
   @apply absolute text-[1.1rem] mt-3;
   @apply md:text-[1.1rem] md:absolute md:mb-[26rem];
   @apply xl:absolute xl:mb-[40rem];
-  @apply 2xl:relative 2xl:m-auto 2xl:mt-4 2xl:text-[1.2rem];
+  @apply 2xl:relative 2xl:m-auto 2xl:mt-4 2xl:text-[1.6rem];
 }
 .slider_div {
   @apply flex w-[95%] justify-center mt-10;

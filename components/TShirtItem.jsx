@@ -32,7 +32,7 @@ export default function TShirtItem({ product, addToCartHandler }) {
             {product.brand}
           </p>
           <p className="text-base md:text-sm lg:text-base xl:text-base">
-            ${product.price}
+            ${product.newPrice}
           </p>
           <button
             className="primary-button"

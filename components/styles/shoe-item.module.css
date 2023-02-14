@@ -13,3 +13,22 @@
 .card_info_div {
   @apply min-[300px]:absolute min-[300px]:mt-14 flex flex-col justify-center items-center md:absolute md:mt-14 lg:absolute lg:mt-1 xl:absolute xl:mt-5;
 }
+
+.primary_button {
+  padding: 8px 18px;
+  margin: 20px 0;
+  position: relative;
+  color: #000;
+  cursor: pointer;
+  border: 1px solid #000;
+  font-size: 15px;
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.primary_button:hover {
+  background-color: #000;
+  color: #fff;
+}
