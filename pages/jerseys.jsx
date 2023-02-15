@@ -2,21 +2,19 @@ import React, { useContext } from 'react';
 import { toast } from 'react-toastify';
 import Layout from '../components/Layout';
 import JerseyItem from '../components/JerseyItem';
-import Product from '../models/Product';
 import db from '../utils/db';
 import { Store } from '../utils/Store';
+import Jersey from '../models/Jersey';
 
-export default function ShoesScreen({ products }) {
+export default function ShoesScreen({ jerseys }) {
   const { state, dispatch } = useContext(Store);
   const { cart } = state;
 
-  const filter = products.filter((product) => product.category === 'Jerseys');
-
-  const addToCartHandler = (product) => {
-    const existItem = cart.cartItems.find((x) => x.slug === product.slug);
+  const addToCartHandler = (jerseys) => {
+    const existItem = cart.cartItems.find((x) => x.slug === jerseys.slug);
     const quantity = existItem ? existItem.quantity + 1 : 1;
 
-    dispatch({ type: 'CART_ADD_ITEM', payload: { ...product, quantity } });
+    dispatch({ type: 'CART_ADD_ITEM', payload: { ...jerseys, quantity } });
 
     toast.success('Product added to the cart');
   };
@@ -25,10 +23,10 @@ export default function ShoesScreen({ products }) {
       <div className="w-11/12 m-auto">
         <div className="w-11/12 m-auto">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4 ml-10 mr-10">
-            {filter.map((product) => (
+            {jerseys.map((jerseys) => (
               <JerseyItem
-                product={product}
-                key={product.slug}
+                product={jerseys}
+                key={jerseys.slug}
                 addToCartHandler={addToCartHandler}
               ></JerseyItem>
             ))}
@@ -41,10 +39,10 @@ export default function ShoesScreen({ products }) {
 
 export async function getServerSideProps() {
   await db.connect();
-  const products = await Product.find().lean();
+  const jerseys = await Jersey.find().lean();
   return {
     props: {
-      products: products.map(db.convertDocToObj),
+      jerseys: jerseys.map(db.convertDocToObj),
     },
   };
 }
