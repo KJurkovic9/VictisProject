@@ -15,6 +15,8 @@ import db from '../../utils/db';
 
 const handler = async (req, res) => {
   await db.connect();
+  await Product.deleteMany();
+
   await User.deleteMany();
   await User.insertMany(allUsers.users);
   await List.deleteMany();
