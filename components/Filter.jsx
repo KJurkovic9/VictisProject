@@ -15,12 +15,12 @@ export default function Filter() {
       {width > 767 ? (
         <div className={styles.filter}>
           <div className={styles.btn_new}>
-            <Link href="/new" legacyBehavior>
+            <Link href="/newproducts" legacyBehavior>
               <a>New</a>
             </Link>
           </div>
           <div className={styles.btn_sale}>
-            <Link href="/sale" legacyBehavior>
+            <Link href="/onsale" legacyBehavior>
               <a>Sale</a>
             </Link>
           </div>

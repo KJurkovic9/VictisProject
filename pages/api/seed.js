@@ -11,12 +11,14 @@ import allCaps from '../../utils/caps';
 import allJerseys from '../../utils/jerseys';
 import allUsers from '../../utils/users';
 import allShoes from '../../utils/shoes';
+
+import NewProduct from '../../models/NewProduct';
+import newProducts from '../../utils/new';
+
 import db from '../../utils/db';
 
 const handler = async (req, res) => {
   await db.connect();
-  await Product.deleteMany();
-
   await User.deleteMany();
   await User.insertMany(allUsers.users);
   await List.deleteMany();
@@ -29,6 +31,8 @@ const handler = async (req, res) => {
   await Jersey.insertMany(allJerseys.jerseys);
   await Shoe.deleteMany();
   await Shoe.insertMany(allShoes.shoes);
+  await NewProduct.deleteMany();
+  await NewProduct.insertMany(newProducts.new);
   await db.disconnect();
   res.send({ message: 'seeded successfully' });
 };
