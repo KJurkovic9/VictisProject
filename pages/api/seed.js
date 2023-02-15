@@ -25,6 +25,8 @@ const handler = async (req, res) => {
   await Cap.insertMany(allCaps.caps);
   await Jersey.deleteMany();
   await Jersey.insertMany(allJerseys.jerseys);
+  await Shoe.deleteMany();
+  await Shoe.insertMany(allShoes.shoes);
   await db.disconnect();
   res.send({ message: 'seeded successfully' });
 };

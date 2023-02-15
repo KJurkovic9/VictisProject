@@ -2,21 +2,19 @@ import React, { useContext } from 'react';
 import { toast } from 'react-toastify';
 import Layout from '../components/Layout';
 import ShoeItem from '../components/ShoeItem';
-import Product from '../models/Product';
+import Shoe from '../models/Shoe';
 import db from '../utils/db';
 import { Store } from '../utils/Store';
 
-export default function ShoesScreen({ products }) {
+export default function ShoesScreen({ shoes }) {
   const { state, dispatch } = useContext(Store);
   const { cart } = state;
 
-  const filter = products.filter((product) => product.category === 'Shoes');
-
-  const addToCartHandler = (product) => {
-    const existItem = cart.cartItems.find((x) => x.slug === product.slug);
+  const addToCartHandler = (shoe) => {
+    const existItem = cart.cartItems.find((x) => x.slug === shoe.slug);
     const quantity = existItem ? existItem.quantity + 1 : 1;
 
-    dispatch({ type: 'CART_ADD_ITEM', payload: { ...product, quantity } });
+    dispatch({ type: 'CART_ADD_ITEM', payload: { ...shoe, quantity } });
 
     toast.success('Product added to the cart');
   };
@@ -25,10 +23,10 @@ export default function ShoesScreen({ products }) {
       <div className="min-[300px]:w-full md:w-11/12 m-auto">
         <div className="w-11/12 m-auto">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4 ml-10 mr-10">
-            {filter.map((product) => (
+            {shoes.map((shoe) => (
               <ShoeItem
-                product={product}
-                key={product.slug}
+                product={shoe}
+                key={shoe.slug}
                 addToCartHandler={addToCartHandler}
               ></ShoeItem>
             ))}
@@ -41,11 +39,11 @@ export default function ShoesScreen({ products }) {
 
 export async function getServerSideProps() {
   await db.connect();
-  const products = await Product.find({ category: 'Shoes' }).lean();
+  const shoes = await Shoe.find().lean();
 
   return {
     props: {
-      products: products.map(db.convertDocToObj),
+      shoes: shoes.map(db.convertDocToObj),
     },
   };
 }
