@@ -1,5 +1,6 @@
 import React from 'react';
+import Layout from '../components/Layout';
 
 export default function New() {
-  return <div>new</div>;
+  return <Layout title="New Products"></Layout>;
 }
