@@ -2,9 +2,12 @@ import React, { useContext } from 'react';
 import { toast } from 'react-toastify';
 import Layout from '../components/Layout';
 import ShoeItem from '../components/ShoeItem';
-import Shoe from '../models/Shoe';
+// import Shoe from '../models/Shoe';
 import db from '../utils/db';
+import allShoes from '../utils/shoes';
 import { Store } from '../utils/Store';
+
+const sshoes = allShoes.shoes;
 
 export default function ShoesScreen({ shoes }) {
   const { state, dispatch } = useContext(Store);
@@ -23,7 +26,7 @@ export default function ShoesScreen({ shoes }) {
       <div className="min-[300px]:w-full md:w-11/12 m-auto">
         <div className="w-11/12 m-auto">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4 ml-10 mr-10">
-            {shoes.map((shoe) => (
+            {sshoes.map((shoe) => (
               <ShoeItem
                 product={shoe}
                 key={shoe.slug}
@@ -37,13 +40,13 @@ export default function ShoesScreen({ shoes }) {
   );
 }
 
-export async function getServerSideProps() {
-  await db.connect();
-  const shoes = await Shoe.find().lean();
+// export async function getServerSideProps() {
+//   await db.connect();
+//   const shoes = await Shoe.find().lean();
 
-  return {
-    props: {
-      shoes: shoes.map(db.convertDocToObj),
-    },
-  };
-}
+//   return {
+//     props: {
+//       shoes: shoes.map(db.convertDocToObj),
+//     },
+//   };
+// }

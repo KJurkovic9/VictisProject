@@ -10,8 +10,19 @@ const SliderShow = dynamic(() => import('../components/Slider'), {
   ssr: false,
 });
 import HighlightProducts from '../components/HighlightProducts';
+import db from '../utils/db';
 
 export default function Home() {
+  const dbConnection = async () => {
+    try {
+      await db.connect();
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  dbConnection();
+
   return (
     <Layout title="Home">
       <Filter></Filter>
