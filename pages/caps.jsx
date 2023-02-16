@@ -2,9 +2,7 @@ import React, { useContext } from 'react';
 import { toast } from 'react-toastify';
 import Layout from '../components/Layout';
 import TShirtItem from '../components/TShirtItem';
-// import Cap from '../models/Cap';
 import allCaps from '../utils/caps';
-import db from '../utils/db';
 import { Store } from '../utils/Store';
 
 const caps = allCaps.caps;
@@ -35,13 +33,3 @@ export default function ShoesScreen() {
     </Layout>
   );
 }
-
-// export async function getServerSideProps() {
-//   await db.connect();
-//   const caps = await Cap.find().lean();
-//   return {
-//     props: {
-//       caps: caps.map(db.convertDocToObj),
-//     },
-//   };
-// }

@@ -2,8 +2,6 @@ import React, { useContext } from 'react';
 import { toast } from 'react-toastify';
 import Layout from '../components/Layout';
 import TShirtItem from '../components/TShirtItem';
-// import TShirt from '../models/TShirt';
-import db from '../utils/db';
 import { Store } from '../utils/Store';
 import allShirts from '../utils/tshirts';
 
@@ -39,13 +37,3 @@ export default function ShoesScreen() {
     </Layout>
   );
 }
-
-// export async function getServerSideProps() {
-//   await db.connect();
-//   const tshirts = await TShirt.find().lean();
-//   return {
-//     props: {
-//       tshirts: tshirts.map(db.convertDocToObj),
-//     },
-//   };
-// }

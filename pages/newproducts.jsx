@@ -2,11 +2,12 @@ import React, { useContext } from 'react';
 import { toast } from 'react-toastify';
 import Layout from '../components/Layout';
 import NewProducts from '../components/NewProducts';
-import NewProduct from '../models/NewProduct';
-import db from '../utils/db';
+import newProducts from '../utils/new';
 import { Store } from '../utils/Store';
 
-export default function ShoesScreen({ newproducts }) {
+const newproducts = newProducts.new;
+
+export default function ShoesScreen() {
   const { state, dispatch } = useContext(Store);
   const { cart } = state;
 
@@ -35,14 +36,4 @@ export default function ShoesScreen({ newproducts }) {
       </div>
     </Layout>
   );
-}
-
-export async function getServerSideProps() {
-  await db.connect();
-  const newproducts = await NewProduct.find().lean();
-  return {
-    props: {
-      newproducts: newproducts.map(db.convertDocToObj),
-    },
-  };
 }
