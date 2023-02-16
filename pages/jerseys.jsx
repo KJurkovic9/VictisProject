@@ -4,9 +4,12 @@ import Layout from '../components/Layout';
 import JerseyItem from '../components/JerseyItem';
 import db from '../utils/db';
 import { Store } from '../utils/Store';
-import Jersey from '../models/Jersey';
+// import Jersey from '../models/Jersey';
+import allJerseys from '../utils/jerseys';
 
-export default function ShoesScreen({ jerseys }) {
+const jerseys = allJerseys.jerseys;
+
+export default function ShoesScreen() {
   const { state, dispatch } = useContext(Store);
   const { cart } = state;
 
@@ -37,12 +40,12 @@ export default function ShoesScreen({ jerseys }) {
   );
 }
 
-export async function getServerSideProps() {
-  await db.connect();
-  const jerseys = await Jersey.find().lean();
-  return {
-    props: {
-      jerseys: jerseys.map(db.convertDocToObj),
-    },
-  };
-}
+// export async function getServerSideProps() {
+//   await db.connect();
+//   const jerseys = await Jersey.find().lean();
+//   return {
+//     props: {
+//       jerseys: jerseys.map(db.convertDocToObj),
+//     },
+//   };
+// }

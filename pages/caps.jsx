@@ -2,11 +2,14 @@ import React, { useContext } from 'react';
 import { toast } from 'react-toastify';
 import Layout from '../components/Layout';
 import TShirtItem from '../components/TShirtItem';
-import Cap from '../models/Cap';
+// import Cap from '../models/Cap';
+import allCaps from '../utils/caps';
 import db from '../utils/db';
 import { Store } from '../utils/Store';
 
-export default function ShoesScreen({ caps }) {
+const caps = allCaps.caps;
+
+export default function ShoesScreen() {
   const { state, dispatch } = useContext(Store);
   const { cart } = state;
 
@@ -33,12 +36,12 @@ export default function ShoesScreen({ caps }) {
   );
 }
 
-export async function getServerSideProps() {
-  await db.connect();
-  const caps = await Cap.find().lean();
-  return {
-    props: {
-      caps: caps.map(db.convertDocToObj),
-    },
-  };
-}
+// export async function getServerSideProps() {
+//   await db.connect();
+//   const caps = await Cap.find().lean();
+//   return {
+//     props: {
+//       caps: caps.map(db.convertDocToObj),
+//     },
+//   };
+// }
