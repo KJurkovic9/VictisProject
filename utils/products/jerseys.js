@@ -274,19 +274,6 @@ const allJerseys = {
       description: 'Very good',
     },
     {
-      name: '2022',
-      slug: '2022-',
-      category: 'Jerseys',
-      image: '/images/jerseys/jersey22.png',
-      oldPrice: 99.99,
-      newPrice: 61.99,
-      brand: 'Adidas',
-      rating: 4.1,
-      numReviews: 12,
-      countInStock: 20,
-      description: 'Very good',
-    },
-    {
       name: '2022 World Cup Spain Red Jersey',
       slug: '2022-wc-spain-red-jersey',
       category: 'Jerseys',
@@ -327,7 +314,7 @@ const allJerseys = {
     },
     {
       name: 'Bayern Away 22/23 Jersey',
-      slug: 'bayern-away-22/23-jersey',
+      slug: '2022-bayern',
       category: 'Jerseys',
       image: '/images/jerseys/jersey26.png',
       oldPrice: 99.99,
@@ -335,12 +322,12 @@ const allJerseys = {
       brand: 'Adidas',
       rating: 4.1,
       numReviews: 12,
-      countInStock: 20,
+      countInStock: 10,
       description: 'Very good',
     },
     {
       name: 'Bayern Home 22/23 Jersey',
-      slug: 'bayern-home-22/23-jersey',
+      slug: 'bayern-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey27.png',
       oldPrice: 99.99,
@@ -353,7 +340,7 @@ const allJerseys = {
     },
     {
       name: 'Borussia Dortmund Home 22/23 Jersey',
-      slug: 'borussia-dortmund-home-22/23-jersey',
+      slug: 'borussia-dortmund-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey28.png',
       oldPrice: 99.99,
@@ -366,7 +353,7 @@ const allJerseys = {
     },
     {
       name: 'RB Leipzig Home 22/23 Jersey',
-      slug: 'rb-leipzig-home-22/23-jersey',
+      slug: 'rb-leipzig-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey29.png',
       oldPrice: 99.99,
@@ -379,7 +366,7 @@ const allJerseys = {
     },
     {
       name: 'Atletico de Madrid Away 22/23 Jersey',
-      slug: 'atletico-de-madrid-away-22/23-jersey',
+      slug: 'atletico-de-madrid-away',
       category: 'Jerseys',
       image: '/images/jerseys/jersey30.png',
       oldPrice: 99.99,
@@ -392,7 +379,7 @@ const allJerseys = {
     },
     {
       name: 'Atletico de Madrid Home 22/23 Jersey',
-      slug: 'atletico-de-madrid-home-22/23-jersey',
+      slug: 'atletico-de-madrid-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey31.png',
       oldPrice: 99.99,
@@ -405,7 +392,7 @@ const allJerseys = {
     },
     {
       name: 'Barcelona Away 22/23 Jersey',
-      slug: 'barcelona-away-22/23-jersey',
+      slug: 'barcelona-away',
       category: 'Jerseys',
       image: '/images/jerseys/jersey32.png',
       oldPrice: 99.99,
@@ -418,7 +405,7 @@ const allJerseys = {
     },
     {
       name: 'Barcelona Home 22/23 Jersey',
-      slug: 'barcelona-home-22/23-jersey',
+      slug: 'barcelona-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey33.png',
       oldPrice: 99.99,
@@ -431,7 +418,7 @@ const allJerseys = {
     },
     {
       name: 'Real Madrid Away 22/23 Jersey',
-      slug: 'real-madrid-away-22/23-jersey',
+      slug: 'real-madrid-away',
       category: 'Jerseys',
       image: '/images/jerseys/jersey34.png',
       oldPrice: 99.99,
@@ -444,7 +431,7 @@ const allJerseys = {
     },
     {
       name: 'Real Madrid Home 22/23 Jersey',
-      slug: 'real-madrid-home-22/23-jersey',
+      slug: 'real-madrid-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey35.png',
       oldPrice: 99.99,
@@ -457,7 +444,7 @@ const allJerseys = {
     },
     {
       name: 'Marseille Home 22/23 Jersey',
-      slug: 'marseille-home-22/23-jersey',
+      slug: 'marseille-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey36.png',
       oldPrice: 99.99,
@@ -470,7 +457,7 @@ const allJerseys = {
     },
     {
       name: 'Monaco Home 22/23 Jersey',
-      slug: 'monaco-home-22/23-jersey',
+      slug: 'monaco-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey37.png',
       oldPrice: 99.99,
@@ -483,7 +470,7 @@ const allJerseys = {
     },
     {
       name: 'PSG Away 22/23 Jersey',
-      slug: 'psg-away-22/23-jersey',
+      slug: 'psg-away',
       category: 'Jerseys',
       image: '/images/jerseys/jersey38.png',
       oldPrice: 99.99,
@@ -496,7 +483,7 @@ const allJerseys = {
     },
     {
       name: 'PSG Home 22/23 Jersey',
-      slug: 'psg-home-22/23-jersey',
+      slug: 'psg-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey39.png',
       oldPrice: 99.99,
@@ -509,7 +496,7 @@ const allJerseys = {
     },
     {
       name: 'Atletico Mineiro Home 22/23 Jersey',
-      slug: 'atletico-mineiro-home-22/23-jersey',
+      slug: 'atletico-mineiro-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey40.png',
       oldPrice: 99.99,
@@ -522,7 +509,7 @@ const allJerseys = {
     },
     {
       name: 'Benfica Home 22/23 Jersey',
-      slug: 'benfica-home-22/23-jersey',
+      slug: 'benfica-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey41.png',
       oldPrice: 99.99,
@@ -535,7 +522,7 @@ const allJerseys = {
     },
     {
       name: 'Boca Juniors Home 22/23 Jersey',
-      slug: 'boca-juniors-home-22/23-jersey',
+      slug: 'boca-juniors-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey42.png',
       oldPrice: 99.99,
@@ -548,7 +535,7 @@ const allJerseys = {
     },
     {
       name: 'Palmeiras Home 22/23 Jersey',
-      slug: 'palmeiras-home-22/23-jersey',
+      slug: 'palmeiras-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey43.png',
       oldPrice: 99.99,
@@ -561,7 +548,7 @@ const allJerseys = {
     },
     {
       name: 'Rangers Home 22/23 Jersey',
-      slug: 'rangers-home-22/23-jersey',
+      slug: 'rangers-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey44.png',
       oldPrice: 99.99,
@@ -574,7 +561,7 @@ const allJerseys = {
     },
     {
       name: 'Sao Paulo Home 22/23 Jersey',
-      slug: 'sao-paulo-home-22/23-jersey',
+      slug: 'sao-paulo-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey45.png',
       oldPrice: 99.99,
@@ -587,7 +574,7 @@ const allJerseys = {
     },
     {
       name: 'Sporting Home 22/23 Jersey',
-      slug: 'sporting-home-22/23-jersey',
+      slug: 'sporting-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey46.png',
       oldPrice: 99.99,
@@ -600,7 +587,7 @@ const allJerseys = {
     },
     {
       name: 'Vasco da Gama 22/23 Jersey',
-      slug: 'vasco-da-gama-home-22/23-jersey',
+      slug: 'vasco-da-gama-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey47.png',
       oldPrice: 99.99,
@@ -613,7 +600,7 @@ const allJerseys = {
     },
     {
       name: 'Celtic Home 22/23 Jersey',
-      slug: 'celtic-home-22/23-jersey',
+      slug: 'celtic-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey48.png',
       oldPrice: 99.99,
@@ -626,7 +613,7 @@ const allJerseys = {
     },
     {
       name: 'Corinthians Home 22/23 Jersey',
-      slug: 'corinthians-home-22/23-jersey',
+      slug: 'corinthians-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey49.png',
       oldPrice: 99.99,
@@ -639,7 +626,7 @@ const allJerseys = {
     },
     {
       name: 'Flamengo Home 22/23 Jersey',
-      slug: 'flamengo-home-22/23-jersey',
+      slug: 'flamengo-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey50.png',
       oldPrice: 99.99,
@@ -652,7 +639,7 @@ const allJerseys = {
     },
     {
       name: 'Fluminense Home 22/23 Jersey',
-      slug: 'fluminense-home-22/23-jersey',
+      slug: 'fluminense-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey51.png',
       oldPrice: 99.99,
@@ -665,7 +652,7 @@ const allJerseys = {
     },
     {
       name: 'Galatasaray Home 22/23 Jersey',
-      slug: 'galatasaray-home-22/23-jersey',
+      slug: 'galatasaray-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey52.png',
       oldPrice: 99.99,
@@ -678,7 +665,7 @@ const allJerseys = {
     },
     {
       name: 'Gremio Home 22/23 Jersey',
-      slug: 'gremio-home-22/23-jersey',
+      slug: 'gremio-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey53.png',
       oldPrice: 99.99,
@@ -691,7 +678,7 @@ const allJerseys = {
     },
     {
       name: 'Liverpool Away 22/23 Jersey',
-      slug: 'liverpool-away-22/23-jersey',
+      slug: 'liverpool-away',
       category: 'Jerseys',
       image: '/images/jerseys/jersey55.png',
       oldPrice: 99.99,
@@ -704,7 +691,7 @@ const allJerseys = {
     },
     {
       name: 'Liverpool Home 22/23 Jersey',
-      slug: 'liverpool-home-22/23-jersey',
+      slug: 'liverpool-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey56.png',
       oldPrice: 99.99,
@@ -717,7 +704,7 @@ const allJerseys = {
     },
     {
       name: 'Manchester City Away 22/23 Jersey',
-      slug: 'manchester-city-away-22/23-jersey',
+      slug: 'manchester-city-away',
       category: 'Jerseys',
       image: '/images/jerseys/jersey57.png',
       oldPrice: 99.99,
@@ -730,7 +717,7 @@ const allJerseys = {
     },
     {
       name: 'Manchester United Away 22/23 Jersey',
-      slug: 'manchester-united-away-22/23-jersey',
+      slug: 'manchester-united-away',
       category: 'Jerseys',
       image: '/images/jerseys/jersey59.png',
       oldPrice: 99.99,
@@ -743,7 +730,7 @@ const allJerseys = {
     },
     {
       name: 'Manchester United Home 22/23 Jersey',
-      slug: 'manchester-united-home-22/23-jersey',
+      slug: 'manchester-united-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey60.png',
       oldPrice: 99.99,
@@ -756,7 +743,7 @@ const allJerseys = {
     },
     {
       name: 'Newcastle United Home 22/23 Jersey',
-      slug: 'newcastle-united-home-22/23-jersey',
+      slug: 'newcastle-united-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey61.png',
       oldPrice: 99.99,
@@ -769,7 +756,7 @@ const allJerseys = {
     },
     {
       name: 'Tottenham Hotspur Away 22/23 Jersey',
-      slug: 'tottenham-hotspur-away-22/23-jersey',
+      slug: 'tottenham-hotspur-away',
       category: 'Jerseys',
       image: '/images/jerseys/jersey62.png',
       oldPrice: 99.99,
@@ -782,7 +769,7 @@ const allJerseys = {
     },
     {
       name: 'Tottenham Hotspur Home 22/23 Jersey',
-      slug: 'tottenham-hotspur-home-22/23-jersey',
+      slug: 'tottenham-hotspur-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey63.png',
       oldPrice: 99.99,
@@ -795,7 +782,7 @@ const allJerseys = {
     },
     {
       name: 'West Ham United Away 22/23 Jersey',
-      slug: 'west-ham-united-away-22/23-jersey',
+      slug: 'west-ham-united-away',
       category: 'Jerseys',
       image: '/images/jerseys/jersey64.png',
       oldPrice: 99.99,
@@ -808,7 +795,7 @@ const allJerseys = {
     },
     {
       name: 'Juventus Away 22/23 Jersey',
-      slug: 'juventus-away-22/23-jersey',
+      slug: 'juventus-away',
       category: 'Jerseys',
       image: '/images/jerseys/jersey65.png',
       oldPrice: 99.99,
@@ -821,7 +808,7 @@ const allJerseys = {
     },
     {
       name: 'Juventus Home 22/23 Jersey',
-      slug: 'juventus-home-22/23-jersey',
+      slug: 'juventus-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey66.png',
       oldPrice: 99.99,
@@ -834,7 +821,7 @@ const allJerseys = {
     },
     {
       name: 'Inter Home 22/23 Jersey',
-      slug: 'inter-home-22/23-jersey',
+      slug: 'inter-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey67.png',
       oldPrice: 99.99,
@@ -847,7 +834,7 @@ const allJerseys = {
     },
     {
       name: 'AC Milan Away 22/23 Jersey',
-      slug: 'ac-milan-away-22/23-jersey',
+      slug: 'ac-milan-away',
       category: 'Jerseys',
       image: '/images/jerseys/jersey68.png',
       oldPrice: 99.99,
@@ -860,7 +847,7 @@ const allJerseys = {
     },
     {
       name: 'AC Milan Home 22/23 Jersey',
-      slug: 'ac-milan-home-22/23-jersey',
+      slug: 'ac-milan-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey69.png',
       oldPrice: 99.99,
@@ -873,7 +860,7 @@ const allJerseys = {
     },
     {
       name: 'AS Roma Home 22/23 Jersey',
-      slug: 'as-roma-home-22/23-jersey',
+      slug: 'as-roma-home',
       category: 'Jerseys',
       image: '/images/jerseys/jersey70.png',
       oldPrice: 99.99,

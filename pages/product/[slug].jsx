@@ -6,6 +6,7 @@ import { Store } from '../../utils/Store';
 import db from '../../utils/db';
 import Product from '../../models/Product';
 import Layout from '../../components/Layout';
+import styles from './slug.module.css';
 
 export default function ProductScreen(props) {
   const { product } = props;
@@ -35,12 +36,21 @@ export default function ProductScreen(props) {
           <Image
             src={product.image}
             alt={product.name}
-            width={640}
-            height={640}
+            width={1000}
+            height={1000}
             priority={true}
+            className={
+              product.category === 'Caps'
+                ? styles.card_picture_caps
+                : product.category === 'T-Shirts'
+                ? styles.card_picture_tshirts
+                : product.category === 'Jerseys'
+                ? styles.card_picture_jerseys
+                : styles.card_picture_shoes
+            }
           ></Image>
         </div>
-        <div>
+        <div className="ml-5 md:ml-0">
           <ul>
             <li>
               <h1 className="text-lg">{product.name}</h1>
@@ -64,7 +74,7 @@ export default function ProductScreen(props) {
               <div>{product.countInStock > 0 ? 'In stock' : 'Unavailable'}</div>
             </div>
             <button
-              className="primary-button w-full"
+              className={styles.primary_button}
               onClick={addToCartHandler}
             >
               Add to Cart

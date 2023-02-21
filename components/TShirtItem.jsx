@@ -14,7 +14,7 @@ export default function TShirtItem({ product, addToCartHandler }) {
             width={200}
             height={100}
             priority={true}
-            className={styles.card_picture}
+            className={styles.card_picture_tshirts}
           />
         </a>
       </Link>
@@ -22,12 +22,12 @@ export default function TShirtItem({ product, addToCartHandler }) {
         <div>
           <Link href={`/product/${product.slug}`} legacyBehavior>
             <a>
-              <h2 className={styles.card_title}>{product.name}</h2>
+              <h2 className={styles.card_title_tshirts}>{product.name}</h2>
             </a>
           </Link>
         </div>
 
-        <div className={styles.card_info_div}>
+        <div className={styles.card_info_div_tshirts}>
           <p className="text-sm text-center md:mt-5 mb-5 md:mb-1 lg:mt-14 ">
             {product.brand}
           </p>
@@ -35,7 +35,7 @@ export default function TShirtItem({ product, addToCartHandler }) {
             ${product.newPrice}
           </p>
           <button
-            className="primary-button"
+            className={styles.primary_button}
             type="button"
             onClick={() => addToCartHandler(product)}
           >

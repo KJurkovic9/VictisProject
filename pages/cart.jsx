@@ -2,18 +2,25 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { XCircleIcon } from '@heroicons/react/24/outline';
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import Layout from '../components/Layout';
 import { Store } from '../utils/Store';
 import dynamic from 'next/dynamic';
 import { toast } from 'react-toastify';
+import allSizes from '../utils/products/size';
+import Cookies from 'js-cookie';
+
+const sizes = allSizes.size;
 
 function CartScreen() {
   const router = useRouter();
   const { state, dispatch } = useContext(Store);
+
   const {
     cart: { cartItems },
   } = state;
+
+  const round2 = (num) => Math.round(num * 100 + Number.EPSILON) / 100;
 
   const removeItemHandler = (item) => {
     dispatch({ type: 'CART_REMOVE_ITEM', payload: item });
@@ -22,9 +29,24 @@ function CartScreen() {
   const updateCartHandler = async (item, qty) => {
     const quantity = Number(qty);
 
-    dispatch({ type: 'CART_ADD_ITEM', payload: { ...item, quantity } });
+    dispatch({
+      type: 'CART_ADD_ITEM',
+      payload: { ...item, quantity },
+    });
     toast.success('Product updated in the cart');
   };
+
+  const handleSizeChange = (e, slug) => {
+    const selectedSize = e.target.value;
+    dispatch({
+      type: 'CART_UPDATE_SIZE',
+      payload: {
+        slug,
+        size: selectedSize,
+      },
+    });
+  };
+
   return (
     <Layout title="Shopping Cart">
       <h1 className="mb-4 text-xl">Shopping Cart</h1>
@@ -43,8 +65,9 @@ function CartScreen() {
                 <tr>
                   <th className="px-5 text-left">Item</th>
                   <th className="p-5 text-right">Quantity</th>
+                  <th className="p-5 text-right">Size</th>
                   <th className="p-5 text-right">Price</th>
-                  <th className="p-5">Action</th>
+                  <th className="p-5">Remove</th>
                 </tr>
               </thead>
               <tbody>
@@ -78,6 +101,31 @@ function CartScreen() {
                         ))}
                       </select>
                     </td>
+                    <td className="p-5 text-right">
+                      <select
+                        value={cartItems.size}
+                        onChange={(e) => handleSizeChange(e, item.slug)}
+                      >
+                        {item.category === 'T-Shirts' ? (
+                          sizes[0].tshirts[0] &&
+                          Object.values(sizes[0].tshirts[0]).map((size) => (
+                            <option value={size}>{size}</option>
+                          ))
+                        ) : item.category === 'Shoes' ? (
+                          sizes[1].shoes[0] &&
+                          Object.values(sizes[1].shoes[0]).map((size) => (
+                            <option value={size}>{size}</option>
+                          ))
+                        ) : item.category === 'Jerseys' ? (
+                          sizes[2].jerseys[0] &&
+                          Object.values(sizes[2].jerseys[0]).map((size) => (
+                            <option value={size}>{size}</option>
+                          ))
+                        ) : (
+                          <option value={0}>One Size</option>
+                        )}
+                      </select>
+                    </td>
                     <td className="p-5 text-right">${item.newPrice}</td>
                     <td className="p-5 text-center">
                       <button onClick={() => removeItemHandler(item)}>
@@ -93,14 +141,17 @@ function CartScreen() {
             <ul>
               <li>
                 <div className="pb-3 text-xl">
-                  Subtotal ({cartItems.reduce((a, c) => a + c.quantity, 0)}) : $
-                  {cartItems.reduce((a, c) => a + c.quantity * c.newPrice, 0)}
+                  Subtotal (
+                  {round2(cartItems.reduce((a, c) => a + c.quantity, 0))}) : $
+                  {round2(
+                    cartItems.reduce((a, c) => a + c.quantity * c.newPrice, 0)
+                  )}
                 </div>
               </li>
               <li className="">
                 <button
                   onClick={() => router.push('login?redirect=/shipping')}
-                  className="primary-button w-full"
+                  className="primary_button w-full"
                 >
                   Check Out
                 </button>

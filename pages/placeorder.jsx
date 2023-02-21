@@ -21,8 +21,10 @@ export default function PlaceOrderScreen() {
     cartItems.reduce((a, c) => a + c.quantity * c.newPrice, 0)
   );
 
-  const shippingPrice = itemsPrice > 200 ? 0 : 15;
-  const taxPrice = round2(itemsPrice * 0.15);
+  console.log(cartItems);
+
+  const shippingPrice = 0;
+  const taxPrice = 0;
   const totalPrice = round2(itemsPrice + shippingPrice + taxPrice);
 
   const router = useRouter();
@@ -98,6 +100,7 @@ export default function PlaceOrderScreen() {
                   <tr>
                     <th className="px-5 text-left">Item</th>
                     <th className="p-5 text-right">Quantity</th>
+                    <th className="p-5 text-right">Size</th>
                     <th className="p-5 text-right">Price</th>
                     <th className="p-5 text-right">Subtotal</th>
                   </tr>
@@ -120,6 +123,15 @@ export default function PlaceOrderScreen() {
                         </Link>
                       </td>
                       <td className=" p-5 text-right">{item.quantity}</td>
+                      <td className=" p-5 text-right">
+                        {item.category === 'T-Shirts'
+                          ? item.size || 'S'
+                          : item.category === 'Jerseys'
+                          ? item.size || 'S'
+                          : item.category === 'Shoes'
+                          ? item.size || '35'
+                          : 'One Size'}
+                      </td>
                       <td className="p-5 text-right">${item.newPrice}</td>
                       <td className="p-5 text-right">
                         ${item.quantity * item.newPrice}
@@ -165,7 +177,7 @@ export default function PlaceOrderScreen() {
                   <button
                     disabled={loading}
                     onClick={placeOrderHandler}
-                    className="primary-button w-full"
+                    className="primary_button w-full"
                   >
                     {loading ? 'Loading...' : 'Place Order'}
                   </button>

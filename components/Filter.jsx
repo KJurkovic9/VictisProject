@@ -30,8 +30,8 @@ export default function Filter() {
             </Link>
           </div>
           <div className={styles.btn_loved}>
-            <Link href="/loved" legacyBehavior>
-              <a>Most Loved</a>
+            <Link href="/limited-edition" legacyBehavior>
+              <a>Limited Edition</a>
             </Link>
           </div>
         </div>
@@ -69,12 +69,12 @@ export default function Filter() {
           <div className={styles.mobileDiv}>
             <div className={styles.mobileFilter}>
               <div className={styles.btn_new_mobile}>
-                <Link href="/New" legacyBehavior>
+                <Link href="/newproducts" legacyBehavior>
                   <a>New</a>
                 </Link>
               </div>
               <div className={styles.btn_sale_mobile}>
-                <Link href="/sale" legacyBehavior>
+                <Link href="/onsale" legacyBehavior>
                   <a>Sale</a>
                 </Link>
               </div>
@@ -84,7 +84,7 @@ export default function Filter() {
                 </Link>
               </div>
               <div className={styles.btn_loved_mobile}>
-                <Link href="/loved" legacyBehavior>
+                <Link href="/limited-edition" legacyBehavior>
                   <a>Most Loved</a>
                 </Link>
               </div>

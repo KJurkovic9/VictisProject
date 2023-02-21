@@ -1,19 +1,18 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import Image from 'next/image';
-import styles from './styles/new-item.module.css';
+import styles from './styles/onsaleitem.module.css';
 
-export default function TShirtItem({ product, addToCartHandler }) {
+export default function OnSaleItem({ product, addToCartHandler }) {
   return (
     <div className={styles.card}>
       <Link href={`/product/${product.slug}`} legacyBehavior>
         <a>
           <Image
             src={product.image}
-            alt={product.name}
+            alt={product.slug}
             width={200}
             height={100}
-            priority={true}
             className={
               product.category === 'Caps'
                 ? styles.card_picture_caps
@@ -46,7 +45,6 @@ export default function TShirtItem({ product, addToCartHandler }) {
             </a>
           </Link>
         </div>
-
         <div
           className={
             product.category === 'T-Shirts'
@@ -58,12 +56,16 @@ export default function TShirtItem({ product, addToCartHandler }) {
               : styles.card_info_div_caps
           }
         >
-          <p className="text-sm text-center md:mt-5 mb-5 md:mb-1 lg:mt-14 ">
+          <p className="text-sm text-center md:mt-5 mb-5 md:mb-1 lg:mt-10 ">
             {product.brand}
+          </p>
+          <p className="line-through text-sm md:text-sm lg:text-sm xl:text-sm">
+            ${product.oldPrice}
           </p>
           <p className="text-base md:text-sm lg:text-base xl:text-base">
             ${product.newPrice}
           </p>
+
           <button
             className={styles.primary_button}
             type="button"

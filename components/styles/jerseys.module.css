@@ -6,7 +6,7 @@
   @apply xl:h-[20rem] xl:w-[95%];
 }
 
-.card_picture_tshirts {
+.card_picture_jerseys {
   @apply m-auto h-[45%] w-9/12;
   @apply md:w-[60%] md:h-[40%];
   @apply lg:h-[40%];
@@ -15,7 +15,7 @@
 
 /* title */
 
-.card_title_tshirts {
+.card_title_jerseys {
   @apply text-center text-base mt-12;
   @apply md:text-base md:mt-8;
   @apply lg:text-base lg:mt-3;
@@ -24,7 +24,7 @@
 
 /* info */
 
-.card_info_div_tshirts {
+.card_info_div_tshirt {
   @apply mt-28 absolute flex flex-col justify-center items-center;
   @apply md:absolute md:mt-[3.8rem];
   @apply lg:absolute lg:mt-1;

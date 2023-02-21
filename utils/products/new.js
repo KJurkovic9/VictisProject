@@ -54,7 +54,7 @@ const newProducts = {
     },
     {
       name: 'Manchester City Away 22/23 Jersey',
-      slug: 'manchester-city-away-22/23-jersey',
+      slug: 'manchester-city-away',
       category: 'Jerseys',
       image: '/images/jerseys/jersey57.png',
       oldPrice: 99.99,
@@ -145,7 +145,7 @@ const newProducts = {
     },
     {
       name: 'Kenzo T–Shirt (Black/Blue)',
-      slug: 't-shirt-kenzo-black-blue#2',
+      slug: 't-shirt-kenzo-black-blue-second',
       category: 'T-Shirts',
       image: '/images/t-shirts/shirt20.png',
       oldPrice: 179.99,

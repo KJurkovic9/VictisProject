@@ -16,14 +16,32 @@ function reducer(state, action) {
       const existItem = state.cart.cartItems.find(
         (item) => item.slug === newItem.slug
       );
+
       const cartItems = existItem
         ? state.cart.cartItems.map((item) =>
             item.name === existItem.name ? newItem : item
           )
         : [...state.cart.cartItems, newItem];
+
       Cookies.set('cart', JSON.stringify({ ...state.cart, cartItems }));
       return { ...state, cart: { ...state.cart, cartItems } };
     }
+
+    case 'CART_UPDATE_SIZE':
+      const updatedCartItems = state.cart.cartItems.map((item) => {
+        if (item.slug === action.payload.slug) {
+          return { ...item, size: action.payload.size };
+        } else {
+          return item;
+        }
+      });
+      return {
+        ...state,
+        cart: {
+          ...state.cart,
+          cartItems: updatedCartItems,
+        },
+      };
 
     case 'CART_REMOVE_ITEM': {
       const cartItems = state.cart.cartItems.filter(
@@ -32,6 +50,7 @@ function reducer(state, action) {
       Cookies.set('cart', JSON.stringify({ ...state.cart, cartItems }));
       return { ...state, cart: { ...state.cart, cartItems } };
     }
+
     case 'CART_RESET':
       return {
         ...state,
@@ -41,6 +60,7 @@ function reducer(state, action) {
           paymentMethod: '',
         },
       };
+
     case 'CART_CLEAR_ITEMS':
       return { ...state, cart: { ...state.cart, cartItems: [] } };
 

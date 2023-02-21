@@ -3,3 +3,12 @@
 Products for page 'new':
 
     -cap4, -cap5, -jersey19, -jersey12, -jersey57, -shoe5, -shoe10, -shoe12, -shoe31, -shoe33, -shirt9, -shirt20
+
+Products for page 'onsale':
+
+    -cap1, -cap9, -cap7, -cap6, -jersey25, -jersey27, -jersey19, -jersey3, -jersey35, -shoe12, -shoe3, -shoe18, shoe25, -shoe37, -shoe17,
+    -shirt17, -shirt2, -shirt8
+
+Products for page 'limited-edition':
+
+    -shoe10, -shirt19,  -shoe16, -shoe32, -jersey7,  -shirt9, -shoe11, -shirt13

@@ -20,8 +20,17 @@ a {
   @apply m-auto w-full;
 }
 
-.primary-button {
-  @apply rounded bg-amber-300 py-2 px-4 md:px-3 md:py-[0.4rem] md:mb-3 shadow outline-none hover:bg-amber-400 active:bg-amber-500;
+.primary_button {
+  @apply w-full py-[8px] px-[18px] my-[20px] mx-0 text-[#000] text-[15px] cursor-pointer border border-black overflow-hidden;
+  @apply md:py-[6px] md:px-[11px];
+  @apply xl:py-[7px] xl:px-[16px];
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.primary_button:hover {
+  @apply bg-[#000] text-[#fff];
 }
 
 .default-button {
@@ -85,4 +94,17 @@ textarea {
 .cookie {
   @apply pr-5 pl-5;
   @apply 2xl:pr-10 2xl:border-r 2xl:border-black 2xl:pl-0;
+}
+
+/* New Products Page */
+/* ------------------------ */
+
+.new-title {
+  @apply text-[1.8rem] font-['Poppins'] font-bold tracking-[-0.12rem] mt-10 ml-10 mr-10;
+  @apply 2xl:text-[3rem];
+}
+
+.new-sentence {
+  @apply text-[1rem] font-['Poppins'] tracking-[-0.05rem] border-b border-black ml-10 mr-10 mb-10;
+  @apply 2xl:text-[1.1rem] 2xl:-mt-2;
 }

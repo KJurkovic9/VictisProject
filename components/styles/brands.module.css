@@ -1,0 +1,88 @@
+.card {
+  @apply h-[22rem] w-[17rem] border last:border-gray-300 shadow-md m-auto;
+  @apply min-[375px]:w-[18rem];
+  @apply min-[414px]:w-[20rem];
+  @apply md:mt-3 md:w-full md:h-[20rem];
+  @apply lg:h-[20rem] lg:w-[14rem];
+  @apply xl:h-[24rem] xl:w-[95%];
+}
+
+.card_picture_caps {
+  @apply m-auto h-[40%] w-[60%];
+  @apply md:w-[55%] md:h-[30%] md:mt-5;
+  @apply lg:w-[55%];
+  @apply xl:w-[50%];
+}
+
+.card_picture_tshirts {
+  @apply m-auto h-[50%] w-7/12;
+  @apply md:w-[60%] md:h-[42%];
+  @apply lg:h-[45%] lg:mt-1;
+  @apply xl:h-[45%] xl:w-[55%] xl:mt-5;
+}
+
+.card_picture_shoes {
+  @apply m-auto h-[40%] w-10/12;
+  @apply md:w-10/12 md:h-[30%] md:mt-5;
+  @apply lg:h-[30%] lg:w-9/12;
+  @apply xl:h-[35%] xl:w-10/12;
+}
+
+/* title */
+
+.card_title_tshirts {
+  @apply text-center text-base mt-1;
+  @apply md:text-base md:mt-3;
+  @apply lg:text-base lg:mt-2;
+  @apply xl:text-base xl:mt-1;
+}
+
+.card_title_shoes {
+  @apply text-center text-base mt-6;
+  @apply md:text-base md:mt-8;
+  @apply lg:text-base lg:mt-10;
+  @apply xl:text-base xl:mt-10;
+}
+
+.card_title_caps {
+  @apply text-center text-base mt-5;
+  @apply md:text-base md:mt-8;
+  @apply lg:text-base lg:mt-10;
+  @apply xl:text-base xl:mt-[3.8rem];
+}
+
+/* info */
+
+.card_info_div_tshirt {
+  @apply mt-9 absolute flex flex-col justify-center items-center;
+  @apply md:absolute md:mt-[3.3rem];
+  @apply lg:absolute lg:mt-1;
+  @apply xl:absolute xl:mt-[1.2rem];
+}
+
+.card_info_div_shoes {
+  @apply mt-[4.5rem] absolute flex flex-col justify-center items-center;
+  @apply md:absolute md:mt-[4.3rem];
+  @apply lg:absolute lg:mt-9;
+  @apply xl:absolute xl:mt-14;
+}
+
+.card_info_div_caps {
+  @apply mt-[4.5rem] absolute flex flex-col justify-center items-center;
+  @apply md:absolute md:mt-[4.4rem];
+  @apply lg:absolute lg:mt-9;
+  @apply xl:absolute xl:mt-[4.7rem];
+}
+
+.primary_button {
+  @apply py-[8px] px-[18px] my-[20px] mx-0 text-[#000] text-[15px] cursor-pointer border border-black overflow-hidden;
+  @apply md:py-[6px] md:px-[11px];
+  @apply xl:py-[7px] xl:px-[16px];
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.primary_button:hover {
+  @apply bg-[#000] text-[#fff];
+}

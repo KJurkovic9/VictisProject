@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { toast } from 'react-toastify';
 import Layout from '../components/Layout';
 import ShoeItem from '../components/ShoeItem';
-import allShoes from '../utils/shoes';
+import allShoes from '../utils/products/shoes';
 import { Store } from '../utils/Store';
 
 const shoes = allShoes.shoes;
@@ -21,8 +21,15 @@ export default function ShoesScreen() {
   };
   return (
     <Layout>
-      <div className="min-[300px]:w-full md:w-11/12 m-auto">
-        <div className="w-11/12 m-auto">
+      <div className="w-full m-auto 2xl:w-11/12">
+        <div className="w-full m-auto 2xl:w-11/12">
+          <div className="w-full m-auto 2xl:w-[98.7%]">
+            <h1 className="new-title">All Shoes</h1>
+            <p className="new-sentence">
+              Explore our all shoes category and discover the perfect pair to
+              match your personal style and taste.
+            </p>
+          </div>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4 ml-10 mr-10">
             {shoes.map((shoe) => (
               <ShoeItem

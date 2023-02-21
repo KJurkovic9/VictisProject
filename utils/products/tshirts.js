@@ -145,7 +145,7 @@ const allShirts = {
     },
     {
       name: 'Givenchy polo T–Shirt (White)',
-      slug: 't-shirt-givenchy-polo-white#1',
+      slug: 't-shirt-givenchy-polo-white-first',
       category: 'T-Shirts',
       image: '/images/t-shirts/shirt12.png',
       oldPrice: 279.99,
@@ -158,7 +158,7 @@ const allShirts = {
     },
     {
       name: 'Givenchy polo T–Shirt (White)',
-      slug: 't-shirt-givenchy-polo-white#2',
+      slug: 't-shirt-givenchy-polo-white-second',
       category: 'T-Shirts',
       image: '/images/t-shirts/shirt13.png',
       oldPrice: 279.99,
@@ -171,7 +171,7 @@ const allShirts = {
     },
     {
       name: 'Kenzo T–Shirt (Black/Blue)',
-      slug: 't-shirt-kenzo-black-blue#1',
+      slug: 't-shirt-kenzo-black-blue-first',
       category: 'T-Shirts',
       image: '/images/t-shirts/shirt14.png',
       oldPrice: 179.99,
@@ -249,7 +249,7 @@ const allShirts = {
     },
     {
       name: 'Kenzo T–Shirt (Black/Blue)',
-      slug: 't-shirt-kenzo-black-blue#2',
+      slug: 't-shirt-kenzo-black-blue-second',
       category: 'T-Shirts',
       image: '/images/t-shirts/shirt20.png',
       oldPrice: 179.99,
@@ -262,7 +262,7 @@ const allShirts = {
     },
     {
       name: 'Kenzo T-Shirt (Gray)',
-      slug: 't-shirt-kenzo-gray#1',
+      slug: 't-shirt-kenzo-gray-first',
       category: 'T-Shirts',
       image: '/images/t-shirts/shirt21.png',
       oldPrice: 179.99,
@@ -275,7 +275,7 @@ const allShirts = {
     },
     {
       name: 'Kenzo T–Shirt (Gray)',
-      slug: 't-shirt-kenzo-gray#2',
+      slug: 't-shirt-kenzo-gray-second',
       category: 'T-Shirts',
       image: '/images/t-shirts/shirt22.png',
       oldPrice: 179.99,

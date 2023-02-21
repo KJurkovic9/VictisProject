@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
-import styles from './styles/new-item.module.css';
+import styles from './styles/limited.module.css';
 
-export default function TShirtItem({ product, addToCartHandler }) {
+export default function LimitedItem({ product, addToCartHandler }) {
   return (
     <div className={styles.card}>
       <Link href={`/product/${product.slug}`} legacyBehavior>
@@ -11,8 +11,8 @@ export default function TShirtItem({ product, addToCartHandler }) {
           <Image
             src={product.image}
             alt={product.name}
-            width={200}
-            height={100}
+            width={2500}
+            height={1500}
             priority={true}
             className={
               product.category === 'Caps'

@@ -6,19 +6,22 @@ import Jersey from '../../models/Jersey';
 import Shoe from '../../models/Shoe';
 import User from '../../models/User';
 import data from '../../utils/data';
-import allShirts from '../../utils/tshirts';
-import allCaps from '../../utils/caps';
-import allJerseys from '../../utils/jerseys';
+import allShirts from '../../utils/products/tshirts';
+import allCaps from '../../utils/products/caps';
+import allJerseys from '../../utils/products/jerseys';
 import allUsers from '../../utils/users';
-import allShoes from '../../utils/shoes';
+import allShoes from '../../utils/products/shoes';
 
+import Order from '../../models/Order';
 import NewProduct from '../../models/NewProduct';
-import newProducts from '../../utils/new';
+import newProducts from '../../utils/products/new';
 
 import db from '../../utils/db';
 
 const handler = async (req, res) => {
   await db.connect();
+  await Product.deleteMany();
+  await Product.insertMany(data.products);
   await User.deleteMany();
   await User.insertMany(allUsers.users);
   await List.deleteMany();

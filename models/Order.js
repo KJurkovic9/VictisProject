@@ -7,10 +7,13 @@ const orderSchema = new mongoose.Schema(
       {
         name: { type: String, required: true },
         quantity: { type: Number, required: true },
+        category: { type: String, required: true },
         image: { type: String, required: true },
+        size: { type: String, required: true, default: 'One Size' },
         newPrice: { type: Number, required: true },
       },
     ],
+
     shippingAddress: {
       fullName: { type: String, required: true },
       address: { type: String, required: true },

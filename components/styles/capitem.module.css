@@ -6,29 +6,28 @@
   @apply xl:h-[20rem] xl:w-[95%];
 }
 
-.card_picture_tshirts {
-  @apply m-auto h-[45%] w-9/12;
-  @apply md:w-[60%] md:h-[40%];
-  @apply lg:h-[40%];
-  @apply xl:w-[60%] xl:h-[50%];
+.card_picture_caps {
+  @apply m-auto h-[40%] w-10/12;
+  @apply md:w-[75%] md:h-[40%];
+  @apply xl:w-[60%];
 }
 
 /* title */
 
-.card_title_tshirts {
+.card_title_caps {
   @apply text-center text-base mt-12;
   @apply md:text-base md:mt-8;
   @apply lg:text-base lg:mt-3;
-  @apply xl:text-base xl:mt-0;
+  @apply xl:text-base xl:mt-[1.7rem];
 }
 
 /* info */
 
-.card_info_div_tshirts {
-  @apply mt-28 absolute flex flex-col justify-center items-center;
+.card_info_div_caps {
+  @apply mt-32 absolute flex flex-col justify-center items-center;
   @apply md:absolute md:mt-[3.8rem];
   @apply lg:absolute lg:mt-1;
-  @apply xl:absolute xl:-mt-3;
+  @apply xl:absolute xl:mt-5;
 }
 
 .primary_button {

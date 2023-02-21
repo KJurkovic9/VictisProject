@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
-import styles from './styles/jerseys.module.css';
+import styles from './styles/capitem.module.css';
 
-export default function JerseyItem({ product, addToCartHandler }) {
+export default function TShirtItem({ product, addToCartHandler }) {
   return (
     <div className={styles.card}>
       <Link href={`/product/${product.slug}`} legacyBehavior>
@@ -14,7 +14,7 @@ export default function JerseyItem({ product, addToCartHandler }) {
             width={200}
             height={100}
             priority={true}
-            className={styles.card_picture_jerseys}
+            className={styles.card_picture_caps}
           />
         </a>
       </Link>
@@ -22,12 +22,12 @@ export default function JerseyItem({ product, addToCartHandler }) {
         <div>
           <Link href={`/product/${product.slug}`} legacyBehavior>
             <a>
-              <h2 className={styles.card_title_jerseys}>{product.name}</h2>
+              <h2 className={styles.card_title_caps}>{product.name}</h2>
             </a>
           </Link>
         </div>
 
-        <div className={styles.card_info_div_tshirt}>
+        <div className={styles.card_info_div_caps}>
           <p className="text-sm text-center md:mt-5 mb-5 md:mb-1 lg:mt-14 ">
             {product.brand}
           </p>

@@ -1,0 +1,40 @@
+.card_picture_caps {
+  @apply m-auto h-[100%] w-[50%];
+  @apply md:w-[50%] md:h-[90%];
+  @apply lg:w-[55%];
+  @apply xl:w-[50%];
+}
+
+.card_picture_tshirts {
+  @apply m-auto h-[80%] w-7/12;
+  @apply md:w-[60%] md:h-[90%];
+  @apply lg:h-[90%];
+  @apply xl:h-[90%] xl:w-[55%];
+}
+
+.card_picture_jerseys {
+  @apply m-auto h-[80%] w-7/12;
+  @apply md:w-[60%] md:h-[90%];
+  @apply lg:h-[90%];
+  @apply xl:h-[90%] xl:w-[55%];
+}
+
+.card_picture_shoes {
+  @apply m-auto h-[100%] w-11/12;
+  @apply md:w-10/12 md:h-[80%] md:mt-5;
+  @apply lg:h-[80%] lg:w-9/12;
+  @apply xl:h-[80%] xl:w-8/12;
+}
+
+.primary_button {
+  @apply w-full py-[8px] px-[18px] my-[20px] mx-0 text-[#000] text-[15px] cursor-pointer border border-black overflow-hidden;
+  @apply md:py-[6px] md:px-[11px];
+  @apply xl:py-[7px] xl:px-[16px];
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.primary_button:hover {
+  @apply bg-[#000] text-[#fff];
+}

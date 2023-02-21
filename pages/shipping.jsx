@@ -124,7 +124,7 @@ export default function ShippingScreen() {
           )}
         </div>
         <div className="mb-4 flex justify-between">
-          <button className="primary-button">Next</button>
+          <button className="primary_button">Next</button>
         </div>
       </form>
     </Layout>

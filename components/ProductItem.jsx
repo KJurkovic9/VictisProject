@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
-import styles from './styles/new-item.module.css';
+import styles from './styles/brands.module.css';
 
-export default function TShirtItem({ product, addToCartHandler }) {
+export default function ProductItem({ product, addToCartHandler }) {
   return (
     <div className={styles.card}>
       <Link href={`/product/${product.slug}`} legacyBehavior>
@@ -11,14 +11,12 @@ export default function TShirtItem({ product, addToCartHandler }) {
           <Image
             src={product.image}
             alt={product.name}
-            width={200}
-            height={100}
+            width={2500}
+            height={1500}
             priority={true}
             className={
               product.category === 'Caps'
                 ? styles.card_picture_caps
-                : product.category === 'Jerseys'
-                ? styles.card_picture_jerseys
                 : product.category === 'T-Shirts'
                 ? styles.card_picture_tshirts
                 : styles.card_picture_shoes
@@ -61,7 +59,7 @@ export default function TShirtItem({ product, addToCartHandler }) {
           <p className="text-sm text-center md:mt-5 mb-5 md:mb-1 lg:mt-14 ">
             {product.brand}
           </p>
-          <p className="text-base md:text-sm lg:text-base xl:text-base">
+          <p className="text-base text-center md:text-sm lg:text-base xl:text-base">
             ${product.newPrice}
           </p>
           <button

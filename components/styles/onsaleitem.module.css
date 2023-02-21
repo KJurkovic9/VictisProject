@@ -1,0 +1,98 @@
+.card {
+  @apply h-[25rem] w-full border border-gray-300 shadow-md m-auto;
+  @apply min-[375px]:w-full;
+  @apply md:mt-0 md:w-full md:h-[20rem];
+  @apply lg:h-[21rem] lg:w-[14rem];
+  @apply xl:h-[22.2rem] xl:w-[95%];
+}
+
+.card_picture_caps {
+  @apply m-auto h-[40%] w-10/12;
+  @apply min-[375px]:w-8/12 min-[375px]:h-[38%];
+  @apply md:w-[75%] md:h-[40%];
+  @apply xl:w-[60%];
+}
+
+.card_picture_jerseys {
+  @apply m-auto h-[45%] w-8/12;
+  @apply md:w-[60%] md:h-[40%];
+  @apply lg:h-[40%];
+  @apply xl:w-[60%] xl:h-[50%];
+}
+
+.card_picture_tshirts {
+  @apply m-auto h-[45%] w-10/12;
+  @apply md:w-[70%] md:h-[40%];
+  @apply lg:h-[40%];
+  @apply xl:h-[50%];
+}
+
+.card_picture_shoes {
+  @apply m-auto h-[40%] w-full;
+  @apply md:w-full md:h-[40%];
+  @apply lg:h-[40%];
+}
+
+/* title */
+
+.card_title_jerseys {
+  @apply text-center text-base mt-3;
+  @apply md:mt-2;
+  @apply lg:mt-1;
+  @apply xl:mt-0;
+}
+
+.card_title_tshirts {
+  @apply text-center text-base mt-5;
+  @apply md:text-base md:mt-2;
+  @apply lg:text-base lg:mt-1;
+  @apply xl:text-base xl:mt-1;
+}
+
+.card_title_shoes {
+  @apply text-center text-base mt-5;
+  @apply md:text-base md:mt-2;
+  @apply lg:text-base lg:mt-1;
+  @apply xl:text-base xl:mt-[2.4rem];
+}
+
+.card_title_caps {
+  @apply text-center text-base mt-8;
+  @apply md:mt-2;
+  @apply lg:mt-1;
+  @apply xl:mt-5;
+}
+
+/* info */
+
+.card_info_div_caps {
+  @apply mt-20 absolute flex flex-col justify-center items-center;
+  @apply md:absolute md:mt-10;
+  @apply lg:mt-6;
+  @apply xl:mt-8;
+}
+
+.card_info_div_tshirt {
+  @apply mt-16 absolute flex flex-col justify-center items-center;
+  @apply md:absolute md:mt-10;
+  @apply lg:absolute lg:mt-6;
+  @apply xl:absolute xl:mt-0;
+}
+
+.card_info_div_shoes {
+  @apply mt-[5.2rem] absolute flex flex-col justify-center items-center;
+  @apply md:absolute md:mt-10;
+  @apply lg:absolute lg:mt-6;
+  @apply xl:absolute xl:mt-[2.2rem];
+}
+
+.primary_button {
+  @apply py-[8px] px-[18px] my-[20px] mx-0 text-[#000] text-[15px] cursor-pointer border border-black overflow-hidden;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.primary_button:hover {
+  @apply bg-[#000] text-[#fff];
+}

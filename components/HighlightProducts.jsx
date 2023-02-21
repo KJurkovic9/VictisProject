@@ -17,7 +17,7 @@ const images = [
 export default function HighlightProducts() {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>MONTH PRODUCTS</h1>
+      <h1 className={styles.title}>LIMITED TIME OFFER</h1>
       <div className={styles.main_container}>
         {images.map((images) => (
           <div key={images.slug} className={styles.conatiner_divs}>

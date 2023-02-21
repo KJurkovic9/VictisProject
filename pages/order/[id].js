@@ -42,6 +42,8 @@ function OrderScreen() {
       error: '',
     });
 
+  console.log(order);
+
   useEffect(() => {
     const fetchOrder = async () => {
       try {
@@ -159,6 +161,7 @@ function OrderScreen() {
                   <tr>
                     <th className="px-5 text-left">Item</th>
                     <th className="p-5 text-right">Quantity</th>
+                    <th className="p-5 text-right">Size</th>
                     <th className="p-5 text-right">Price</th>
                     <th className="p-5 text-right">Subtotal</th>
                   </tr>
@@ -181,6 +184,15 @@ function OrderScreen() {
                         </Link>
                       </td>
                       <td className=" p-5 text-right">{item.quantity}</td>
+                      <td className=" p-5 text-right">
+                        {item.category === 'T-Shirts'
+                          ? item.size || 'S'
+                          : item.category === 'Jerseys'
+                          ? item.size || 'S'
+                          : item.category === 'Shoes'
+                          ? item.size || '35'
+                          : 'One Size'}
+                      </td>
                       <td className="p-5 text-right">${item.newPrice}</td>
                       <td className="p-5 text-right">
                         ${item.quantity * item.newPrice}

@@ -3,11 +3,11 @@ import { toast } from 'react-toastify';
 import Layout from '../components/Layout';
 import TShirtItem from '../components/TShirtItem';
 import { Store } from '../utils/Store';
-import allShirts from '../utils/tshirts';
+import allShirts from '../utils/products/tshirts';
 
 const tshirts = allShirts.tshirts;
 
-export default function ShoesScreen() {
+export default function TShirtScreen() {
   const { state, dispatch } = useContext(Store);
   const { cart } = state;
 
@@ -19,10 +19,18 @@ export default function ShoesScreen() {
 
     toast.success('Product added to the cart');
   };
+
   return (
-    <Layout>
-      <div className="w-11/12 m-auto">
-        <div className="w-11/12 m-auto">
+    <Layout title="T-Shirts">
+      <div className="w-full m-auto 2xl:w-11/12">
+        <div className="w-full m-auto 2xl:w-11/12">
+          <div className="w-full m-auto 2xl:w-[98.7%]">
+            <h1 className="new-title">All T-Shirts</h1>
+            <p className="new-sentence">
+              Upgrade your wardrobe with our all t-shirts collection, available
+              in a variety of colors and styles.
+            </p>
+          </div>
           <div className="grid grid-cols-1 gap-3 md:grid-cols-3 lg:grid-cols-4 ml-10 mr-10">
             {tshirts.map((tshirt) => (
               <TShirtItem

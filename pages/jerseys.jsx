@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 import Layout from '../components/Layout';
 import JerseyItem from '../components/JerseyItem';
 import { Store } from '../utils/Store';
-import allJerseys from '../utils/jerseys';
+import allJerseys from '../utils/products/jerseys';
 
 const jerseys = allJerseys.jerseys;
 
@@ -21,8 +21,15 @@ export default function ShoesScreen() {
   };
   return (
     <Layout>
-      <div className="w-11/12 m-auto">
-        <div className="w-11/12 m-auto">
+      <div className="w-full m-auto 2xl:w-11/12">
+        <div className="w-full m-auto 2xl:w-11/12">
+          <div className="w-full m-auto 2xl:w-[98.7%]">
+            <h1 className="new-title">All Jerseys</h1>
+            <p className="new-sentence">
+              Cheer on your team in style with our all jerseys collection,
+              available in a variety of designs and sizes.
+            </p>
+          </div>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4 ml-10 mr-10">
             {jerseys.map((jerseys) => (
               <JerseyItem

@@ -15,7 +15,7 @@ const allCaps = {
     },
     {
       name: 'NIKE letter fashion trend Gray/Black cap',
-      slug: 'cap-nike-letter-fashion-trend-gray-black-cap#1',
+      slug: 'cap-nike-letter-fashion-trend-gray-black-cap-first',
       category: 'Caps',
       image: '/images/caps/cap2.png',
       oldPrice: 49.99,
@@ -28,7 +28,7 @@ const allCaps = {
     },
     {
       name: 'NIKE letter fashion trend Black/White cap',
-      slug: 'cap-nike-letter-fashion-trend-black-white-cap#1',
+      slug: 'cap-nike-letter-fashion-trend-black-white-cap-first',
       category: 'Caps',
       image: '/images/caps/cap3.png',
       oldPrice: 49.99,
@@ -80,7 +80,7 @@ const allCaps = {
     },
     {
       name: 'NIKE letter fashion trend Black/White cap',
-      slug: 'cap-nike-letter-fashion-trend-black-white-cap#2',
+      slug: 'cap-nike-letter-fashion-trend-black-white-cap-second',
       category: 'Caps',
       image: '/images/caps/cap7.png',
       oldPrice: 49.99,
@@ -106,7 +106,7 @@ const allCaps = {
     },
     {
       name: 'NIKE letter fashion trend Gray/Black cap',
-      slug: 'cap-nike-letter-fashion-trend-gray-black-cap#2',
+      slug: 'cap-nike-letter-fashion-trend-gray-black-cap-second',
       category: 'Caps',
       image: '/images/caps/cap9.png',
       oldPrice: 49.99,
@@ -119,7 +119,7 @@ const allCaps = {
     },
     {
       name: 'NIKE letter fashion trend Black/White cap',
-      slug: 'cap-nike-letter-fashion-trend-black-white-cap#3',
+      slug: 'cap-nike-letter-fashion-trend-black-white-cap-third',
       category: 'Caps',
       image: '/images/caps/cap10.png',
       oldPrice: 49.99,
