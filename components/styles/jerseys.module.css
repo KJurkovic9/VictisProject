@@ -7,8 +7,8 @@
 }
 
 .card_picture_jerseys {
-  @apply m-auto h-[45%] w-9/12;
-  @apply md:w-[60%] md:h-[40%];
+  @apply m-auto h-[45%] w-7/12;
+  @apply md:w-[55%] md:h-[40%];
   @apply lg:h-[40%];
   @apply xl:w-[60%] xl:h-[50%];
 }
