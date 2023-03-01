@@ -164,7 +164,7 @@ export default function PlaceOrderScreen() {
                 <li>
                   <div className="mb-2 flex justify-between">
                     <div>Shipping</div>
-                    <div>${shippingPrice}</div>
+                    <div>€{shippingPrice}</div>
                   </div>
                 </li>
                 <li>
