@@ -195,7 +195,7 @@ function OrderScreen() {
                       </td>
                       <td className="p-5 text-right">${item.newPrice}</td>
                       <td className="p-5 text-right">
-                        ${item.quantity * item.newPrice}
+                        €{item.quantity * item.newPrice}
                       </td>
                     </tr>
                   ))}
