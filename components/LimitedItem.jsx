@@ -62,7 +62,7 @@ export default function LimitedItem({ product, addToCartHandler }) {
             {product.brand}
           </p>
           <p className="text-base md:text-sm lg:text-base xl:text-base">
-            ${product.newPrice}
+            €{product.newPrice}
           </p>
           <button
             className={styles.primary_button}

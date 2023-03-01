@@ -60,7 +60,7 @@ export default function ProductItem({ product, addToCartHandler }) {
             {product.brand}
           </p>
           <p className="text-base text-center md:text-sm lg:text-base xl:text-base">
-            ${product.newPrice}
+            €{product.newPrice}
           </p>
           <button
             className={styles.primary_button}

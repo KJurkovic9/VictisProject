@@ -60,10 +60,10 @@ export default function OnSaleItem({ product, addToCartHandler }) {
             {product.brand}
           </p>
           <p className="line-through text-sm md:text-sm lg:text-sm xl:text-sm">
-            ${product.oldPrice}
+            €{product.oldPrice}
           </p>
           <p className="text-base md:text-sm lg:text-base xl:text-base">
-            ${product.newPrice}
+            €{product.newPrice}
           </p>
 
           <button
