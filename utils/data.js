@@ -2118,7 +2118,7 @@ const data = {
       category: 'T-Shirts',
       image: '/images/t-shirts/Gucci all white polo shirt.png',
       oldPrice: 499.99,
-      newPrice: 0.1,
+      newPrice: 299.99,
       brand: 'Gucci',
       rating: 4.5,
       numReviews: 15,

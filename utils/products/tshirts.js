@@ -541,11 +541,11 @@ const allShirts = {
       category: 'T-Shirts',
       image: '/images/t-shirts/Gucci all white polo shirt.png',
       oldPrice: 499.99,
-      newPrice: 0.1,
+      newPrice: 299.99,
       brand: 'Gucci',
       rating: 4.5,
       numReviews: 15,
-      countInstock: 20,
+      countInstock: 10,
       description:
         'Gucci is an Italian high-end luxury fashion house based in Florence, Italy.  Its product lines include handbags, ready-to-wear, footwear, accessories, and home decoration; and it licenses its name and branding to Coty, Inc. for fragrance and cosmetics under the name Gucci Beauty. In 2019, Gucci operated 487 stores for 17,157 employees, and generated €9.628 billion in sales (€8.2 billion in 2018). Marco Bizzarri is CEO of Gucci since December 2014, and Alessandro Michele was creative director from January 2015 to November 23, 2022. Gucci is a subsidiary of the French luxury group Kering. ',
     },
