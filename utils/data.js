@@ -1879,7 +1879,7 @@ const data = {
     {
       name: 'Fendi  T-shirt-Black',
       slug: 'fendi-t-shirt-black',
-      category: 'T-shirts',
+      category: 'T-Shirts',
       image: '/images/t-shirts/shirt24.png',
       oldPrice: 699.99,
       newPrice: 299.99,
@@ -1893,7 +1893,7 @@ const data = {
     {
       name: 'Fendi  T-shirt-White',
       slug: 'fendi-t-shirt-white',
-      category: 'T-shirts',
+      category: 'T-Shirts',
       image:
         '/images/t-shirts/FENDI Fashion Casual Summer Short sleeve T-shirt-White.png',
       oldPrice: 699.99,
@@ -1908,7 +1908,7 @@ const data = {
     {
       name: 'Fendi polo shirt black',
       slug: 'fendi-polo-shirt-black',
-      category: 'T-shirts',
+      category: 'T-Shirts',
       image: '/images/t-shirts/Fendi crna polo 2.png',
       oldPrice: 549.99,
       newPrice: 229.99,
@@ -1923,7 +1923,7 @@ const data = {
     {
       name: 'Fendi polo shirt white',
       slug: 'fendi-polo-shirt-white ',
-      category: 'T-shirts ',
+      category: 'T-Shirts ',
       image: '/images/t-shirts/Fendi bijela polo 2.png',
       oldPrice: 549.99,
       newPrice: 289.99,
@@ -1937,7 +1937,7 @@ const data = {
     {
       name: 'Fendi summer polo shirt white',
       slug: 'fendi-summer-polo-shirt-white',
-      category: 'T-shirts',
+      category: 'T-Shirts',
       image: '/images/t-shirts/Fendi bijela polo 3.png',
       oldPrice: 799.99,
       newPrice: 309.99,
@@ -1952,7 +1952,7 @@ const data = {
     {
       name: 'Fendi summer  polo shirt black',
       slug: 'fendi-summer-polo-shirt-black',
-      category: 'T-shirts',
+      category: 'T-Shirts',
       image: '/images/t-shirts/Fendi crna polo 3.png',
       oldPrice: 799.99,
       newPrice: 309.99,
@@ -1967,7 +1967,7 @@ const data = {
     {
       name: 'Fendi white/gray  shirt',
       slug: 'fendi-white/gray-shirt',
-      category: 'T-shirts',
+      category: 'T-Shirts',
       image: '/images/t-shirts/Fendi bijela majica kratka.png',
       oldPrice: 849.99,
       newPrice: 349.99,
@@ -1982,7 +1982,7 @@ const data = {
     {
       name: 'Gucci black shirt',
       slug: 'gucci-black-shirt',
-      category: 'T-shirts',
+      category: 'T-Shirts',
       image: '/images/t-shirts/Gucci crna majica.png',
       oldPrice: 390.99,
       newPrice: 259.99,
@@ -1997,7 +1997,7 @@ const data = {
     {
       name: 'Gucci polo black shirt',
       slug: 'gucci-polo-black-shirt',
-      category: 'T-shirts',
+      category: 'T-Shirts',
       image: '/images/t-shirts/Gucci crna polo majica.png',
       oldPrice: 399.99,
       newPrice: 289.99,
@@ -2012,7 +2012,7 @@ const data = {
     {
       name: 'Gucci polo white shirt',
       slug: 'gucci-polo-white-shirt',
-      category: 'T-shirts',
+      category: 'T-Shirts',
       image: '/images/t-shirts/Gucci bijela polo majica.png',
       oldPrice: 399.99,
       newPrice: 289.99,
@@ -2027,7 +2027,7 @@ const data = {
     {
       name: 'Gucci summer white polo shirt',
       slug: 'gucci-summer-white-polo-shirt',
-      category: 'T-shirts',
+      category: 'T-Shirts',
       image: '/images/t-shirts/Gucci summer white polo shirt.png',
       oldPrice: 420.99,
       newPrice: 299.99,
@@ -2042,7 +2042,7 @@ const data = {
     {
       name: 'Gucci 69 black shirt',
       slug: 'gucci-69-black-shirt',
-      category: 'T-shirts',
+      category: 'T-Shirts',
       image: '/images/t-shirts/Gucci 69 black.png',
       oldPrice: 405.99,
       newPrice: 319.99,
@@ -2056,7 +2056,7 @@ const data = {
     {
       name: 'Gucci 69 red shirt',
       slug: 'gucci-69-red-shirt',
-      category: 'T-shirts',
+      category: 'T-Shirts',
       image: '/images/t-shirts/Gucci 69 red.png',
       oldPrice: 405.99,
       newPrice: 319.99,
@@ -2071,7 +2071,7 @@ const data = {
     {
       name: 'Gucci all black polo shirt',
       slug: 'gucci-all-black-polo-shirt',
-      category: 'T-shirts',
+      category: 'T-Shirts',
       image: '/images/t-shirts/Gucci all black polo shirt.png',
       oldPrice: 444.99,
       newPrice: 309.99,
@@ -2086,7 +2086,7 @@ const data = {
     {
       name: 'Gucci casual polo shirt (black)',
       slug: 'gucci-casual-polo-shirt-(black)',
-      category: 'T-shirts',
+      category: 'T-Shirts',
       image: '/images/t-shirts/Gucci casual black polo shirt.png',
       oldPrice: 499.99,
       newPrice: 299.99,
@@ -2101,7 +2101,7 @@ const data = {
     {
       name: 'Gucci casual polo shirt (white)',
       slug: 'gucci-casual-polo-shirt-(white)',
-      category: 'T-shirts',
+      category: 'T-Shirts',
       image: '/images/t-shirts/Gucci casual white polo shirt.png',
       oldPrice: 499.99,
       newPrice: 299.99,
@@ -2115,10 +2115,10 @@ const data = {
     {
       name: 'Gucci all white polo shirt',
       slug: 'gucci-all-white-polo-shirt',
-      category: 'T-shirts',
+      category: 'T-Shirts',
       image: '/images/t-shirts/Gucci all white polo shirt.png',
       oldPrice: 499.99,
-      newPrice: 299.99,
+      newPrice: 0.99,
       brand: 'Gucci',
       rating: 4.5,
       numReviews: 15,
