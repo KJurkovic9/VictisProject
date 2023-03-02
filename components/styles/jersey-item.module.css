@@ -1,5 +1,5 @@
 .card {
-  @apply min-[300px]:w-56 m-auto h-[95%] w-11/12 md:w-full md:h-[22rem] lg:h-[25rem] xl:h-[28rem] xl:mt-5  border border-gray-200 shadow-md;
+  @apply min-[300px]:w-56 m-auto h-[95%] w-11/12 md:w-full md:h-[22rem] lg:h-[25rem] xl:h-[28rem] xl:mt-5  border border-gray-200 shadow-md bg-gray-50;
 }
 
 .card_picture {

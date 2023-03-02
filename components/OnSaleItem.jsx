@@ -11,7 +11,7 @@ export default function OnSaleItem({ product, addToCartHandler }) {
           <Image
             src={product.image}
             alt={product.slug}
-            width={200}
+            width={2000}
             height={100}
             className={
               product.category === 'Caps'

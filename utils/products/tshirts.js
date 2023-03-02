@@ -309,7 +309,7 @@ const allShirts = {
       brand: 'Fendi',
       rating: 4.9,
       numReviews: 12,
-      countInstock: 24,
+      countInStock: 24,
       description:
         'Fendi  is an Italian luxury fashion house producing fur, ready-to-wear, leather goods, shoes, fragrances, eyewear, timepieces and accessories. Founded in Rome in 1925, Fendi is known for its fur, fur accessories, and leather goods. Since 2001, Fendi has been part of the “Fashion & Leather Goods” division of French group LVMH.  Its headquarters are in Rome, in the Palazzo della Civiltà Italiana. ',
     },
@@ -324,7 +324,7 @@ const allShirts = {
       brand: 'Fendi',
       rating: 4.6,
       numReviews: 10,
-      countInstock: 24,
+      countInStock: 24,
       description:
         'Fendi  is an Italian luxury fashion house producing fur, ready-to-wear, leather goods, shoes, fragrances, eyewear, timepieces and accessories. Founded in Rome in 1925, Fendi is known for its fur, fur accessories, and leather goods. Since 2001, Fendi has been part of the “Fashion & Leather Goods” division of French group LVMH.  Its headquarters are in Rome, in the Palazzo della Civiltà Italiana. ',
     },
@@ -338,7 +338,7 @@ const allShirts = {
       brand: 'Fendi',
       rating: 4.7,
       numReviews: 12,
-      countInstock: 22,
+      countInStock: 22,
       description:
         'Fendi  is an Italian luxury fashion house producing fur, ready-to-wear, leather goods, shoes, fragrances, eyewear, timepieces and accessories. Founded in Rome in 1925, Fendi is known for its fur, fur accessories, and leather goods. Since 2001, Fendi has been part of the “Fashion & Leather Goods” division of French group LVMH.  Its headquarters are in Rome, in the Palazzo della Civiltà Italiana. ',
     },
@@ -353,7 +353,7 @@ const allShirts = {
       brand: 'Fendi',
       rating: 4.5,
       numReviews: 8,
-      countInstock: 22,
+      countInStock: 22,
       description:
         'Fendi  is an Italian luxury fashion house producing fur, ready-to-wear, leather goods, shoes, fragrances, eyewear, timepieces and accessories. Founded in Rome in 1925, Fendi is known for its fur, fur accessories, and leather goods. Since 2001, Fendi has been part of the “Fashion & Leather Goods” division of French group LVMH.  Its headquarters are in Rome, in the Palazzo della Civiltà Italiana. ',
     },
@@ -367,7 +367,7 @@ const allShirts = {
       brand: 'Fendi',
       rating: 4.9,
       numReviews: 11,
-      countInstock: 25,
+      countInStock: 25,
       description:
         'Fendi  is an Italian luxury fashion house producing fur, ready-to-wear, leather goods, shoes, fragrances, eyewear, timepieces and accessories. Founded in Rome in 1925, Fendi is known for its fur, fur accessories, and leather goods. Since 2001, Fendi has been part of the “Fashion & Leather Goods” division of French group LVMH.  Its headquarters are in Rome, in the Palazzo della Civiltà Italiana. ',
     },
@@ -382,7 +382,7 @@ const allShirts = {
       brand: 'Fendi',
       rating: 4.6,
       numReviews: 14,
-      countInstock: 24,
+      countInStock: 24,
       description:
         'Fendi  is an Italian luxury fashion house producing fur, ready-to-wear, leather goods, shoes, fragrances, eyewear, timepieces and accessories. Founded in Rome in 1925, Fendi is known for its fur, fur accessories, and leather goods. Since 2001, Fendi has been part of the “Fashion & Leather Goods” division of French group LVMH.  Its headquarters are in Rome, in the Palazzo della Civiltà Italiana. ',
     },
@@ -397,7 +397,7 @@ const allShirts = {
       brand: 'Fendi',
       rating: 4.4,
       numReviews: 9,
-      countInstock: 12,
+      countInStock: 12,
       description:
         'Fendi  is an Italian luxury fashion house producing fur, ready-to-wear, leather goods, shoes, fragrances, eyewear, timepieces and accessories. Founded in Rome in 1925, Fendi is known for its fur, fur accessories, and leather goods. Since 2001, Fendi has been part of the “Fashion & Leather Goods” division of French group LVMH.  Its headquarters are in Rome, in the Palazzo della Civiltà Italiana. ',
     },
@@ -412,7 +412,7 @@ const allShirts = {
       brand: 'Gucci',
       rating: 4.9,
       numReviews: 11,
-      countInstock: 13,
+      countInStock: 13,
       description:
         'Gucci is an Italian high-end luxury fashion house based in Florence, Italy.  Its product lines include handbags, ready-to-wear, footwear, accessories, and home decoration; and it licenses its name and branding to Coty, Inc. for fragrance and cosmetics under the name Gucci Beauty. In 2019, Gucci operated 487 stores for 17,157 employees, and generated €9.628 billion in sales (€8.2 billion in 2018). Marco Bizzarri is CEO of Gucci since December 2014, and Alessandro Michele was creative director from January 2015 to November 23, 2022. Gucci is a subsidiary of the French luxury group Kering. ',
     },
@@ -427,7 +427,7 @@ const allShirts = {
       brand: 'Gucci',
       rating: 4.7,
       numReviews: 16,
-      countInstock: 22,
+      countInStock: 22,
       description:
         ' Gucci is an Italian high-end luxury fashion house based in Florence, Italy.  Its product lines include handbags, ready-to-wear, footwear, accessories, and home decoration; and it licenses its name and branding to Coty, Inc. for fragrance and cosmetics under the name Gucci Beauty. In 2019, Gucci operated 487 stores for 17,157 employees, and generated €9.628 billion in sales (€8.2 billion in 2018). Marco Bizzarri is CEO of Gucci since December 2014, and Alessandro Michele was creative director from January 2015 to November 23, 2022. Gucci is a subsidiary of the French luxury group Kering. ',
     },
@@ -442,7 +442,7 @@ const allShirts = {
       brand: 'Gucci',
       rating: 4.7,
       numReviews: 16,
-      countInstock: 22,
+      countInStock: 22,
       description:
         'Gucci is an Italian high-end luxury fashion house based in Florence, Italy.  Its product lines include handbags, ready-to-wear, footwear, accessories, and home decoration; and it licenses its name and branding to Coty, Inc. for fragrance and cosmetics under the name Gucci Beauty. In 2019, Gucci operated 487 stores for 17,157 employees, and generated €9.628 billion in sales (€8.2 billion in 2018). Marco Bizzarri is CEO of Gucci since December 2014, and Alessandro Michele was creative director from January 2015 to November 23, 2022. Gucci is a subsidiary of the French luxury group Kering. ',
     },
@@ -457,7 +457,7 @@ const allShirts = {
       brand: 'Gucci',
       rating: 4.9,
       numReviews: 8,
-      countInstock: 24,
+      countInStock: 24,
       description:
         'Gucci is an Italian high-end luxury fashion house based in Florence, Italy.  Its product lines include handbags, ready-to-wear, footwear, accessories, and home decoration; and it licenses its name and branding to Coty, Inc. for fragrance and cosmetics under the name Gucci Beauty. In 2019, Gucci operated 487 stores for 17,157 employees, and generated €9.628 billion in sales (€8.2 billion in 2018). Marco Bizzarri is CEO of Gucci since December 2014, and Alessandro Michele was creative director from January 2015 to November 23, 2022. Gucci is a subsidiary of the French luxury group Kering. ',
     },
@@ -472,7 +472,7 @@ const allShirts = {
       brand: 'Gucci',
       rating: 4.7,
       numReviews: 10,
-      countInstock: 24,
+      countInStock: 24,
       description:
         'Gucci is an Italian high-end luxury fashion house based in Florence, Italy.  Its product lines include handbags, ready-to-wear, footwear, accessories, and home decoration; and it licenses its name and branding to Coty, Inc. for fragrance and cosmetics under the name Gucci Beauty. In 2019, Gucci operated 487 stores for 17,157 employees, and generated €9.628 billion in sales (€8.2 billion in 2018). Marco Bizzarri is CEO of Gucci since December 2014, and Alessandro Michele was creative director from January 2015 to November 23, 2022. Gucci is a subsidiary of the French luxury group Kering. ',
     },
@@ -486,7 +486,7 @@ const allShirts = {
       brand: 'Gucci',
       rating: 4.5,
       numReviews: 12,
-      countInstock: 18,
+      countInStock: 18,
       description:
         'Gucci is an Italian high-end luxury fashion house based in Florence, Italy.  Its product lines include handbags, ready-to-wear, footwear, accessories, and home decoration; and it licenses its name and branding to Coty, Inc. for fragrance and cosmetics under the name Gucci Beauty. In 2019, Gucci operated 487 stores for 17,157 employees, and generated €9.628 billion in sales (€8.2 billion in 2018). Marco Bizzarri is CEO of Gucci since December 2014, and Alessandro Michele was creative director from January 2015 to November 23, 2022. Gucci is a subsidiary of the French luxury group Kering. ',
     },
@@ -501,7 +501,7 @@ const allShirts = {
       brand: 'Gucci',
       rating: 4.5,
       numReviews: 10,
-      countInstock: 23,
+      countInStock: 23,
       description:
         ' Gucci is an Italian high-end luxury fashion house based in Florence, Italy.  Its product lines include handbags, ready-to-wear, footwear, accessories, and home decoration; and it licenses its name and branding to Coty, Inc. for fragrance and cosmetics under the name Gucci Beauty. In 2019, Gucci operated 487 stores for 17,157 employees, and generated €9.628 billion in sales (€8.2 billion in 2018). Marco Bizzarri is CEO of Gucci since December 2014, and Alessandro Michele was creative director from January 2015 to November 23, 2022. Gucci is a subsidiary of the French luxury group Kering. ',
     },
@@ -516,7 +516,7 @@ const allShirts = {
       brand: 'Gucci',
       rating: 4.5,
       numReviews: 14,
-      countInstock: 29,
+      countInStock: 29,
       description:
         'Gucci is an Italian high-end luxury fashion house based in Florence, Italy.  Its product lines include handbags, ready-to-wear, footwear, accessories, and home decoration; and it licenses its name and branding to Coty, Inc. for fragrance and cosmetics under the name Gucci Beauty. In 2019, Gucci operated 487 stores for 17,157 employees, and generated €9.628 billion in sales (€8.2 billion in 2018). Marco Bizzarri is CEO of Gucci since December 2014, and Alessandro Michele was creative director from January 2015 to November 23, 2022. Gucci is a subsidiary of the French luxury group Kering. ',
     },
@@ -531,7 +531,7 @@ const allShirts = {
       brand: 'Gucci',
       rating: 4.9,
       numReviews: 18,
-      countInstock: 22,
+      countInStock: 22,
       description:
         'Gucci is an Italian high-end luxury fashion house based in Florence, Italy.  Its product lines include handbags, ready-to-wear, footwear, accessories, and home decoration; and it licenses its name and branding to Coty, Inc. for fragrance and cosmetics under the name Gucci Beauty. In 2019, Gucci operated 487 stores for 17,157 employees, and generated €9.628 billion in sales (€8.2 billion in 2018). Marco Bizzarri is CEO of Gucci since December 2014, and Alessandro Michele was creative director from January 2015 to November 23, 2022. Gucci is a subsidiary of the French luxury group Kering. ',
     },
@@ -545,7 +545,7 @@ const allShirts = {
       brand: 'Gucci',
       rating: 4.5,
       numReviews: 15,
-      countInstock: 10,
+      countInStock: 10,
       description:
         'Gucci is an Italian high-end luxury fashion house based in Florence, Italy.  Its product lines include handbags, ready-to-wear, footwear, accessories, and home decoration; and it licenses its name and branding to Coty, Inc. for fragrance and cosmetics under the name Gucci Beauty. In 2019, Gucci operated 487 stores for 17,157 employees, and generated €9.628 billion in sales (€8.2 billion in 2018). Marco Bizzarri is CEO of Gucci since December 2014, and Alessandro Michele was creative director from January 2015 to November 23, 2022. Gucci is a subsidiary of the French luxury group Kering. ',
     },

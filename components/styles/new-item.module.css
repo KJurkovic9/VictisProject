@@ -27,9 +27,10 @@
 }
 
 .card_picture_shoes {
-  @apply m-auto h-[40%] w-full;
+  @apply m-auto h-[35%] w-full;
+  @apply min-[393px]:h-[40%];
   @apply md:w-full md:h-[40%];
-  @apply lg:h-[40%];
+  @apply lg:h-[40%] xl:w-[85%];
 }
 
 /* title */

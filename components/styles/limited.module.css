@@ -1,5 +1,5 @@
 .card {
-  @apply h-[28rem] w-full border border-gray-300 shadow-md m-auto;
+  @apply h-[28rem] w-full border border-gray-300 shadow-md m-auto bg-gray-50;
   @apply min-[375px]:w-full;
   @apply md:mt-3 md:w-full md:h-[20rem];
   @apply lg:h-[18rem] lg:w-[14rem];
@@ -13,7 +13,7 @@
 }
 
 .card_picture_jerseys {
-  @apply m-auto h-[45%] w-9/12;
+  @apply m-auto h-[45%] w-7/12;
   @apply md:w-[60%] md:h-[40%];
   @apply lg:h-[40%];
   @apply xl:w-[60%] xl:h-[50%];
@@ -27,9 +27,10 @@
 }
 
 .card_picture_shoes {
-  @apply m-auto h-[40%] w-full;
+  @apply m-auto h-[35%] w-full;
+  @apply min-[393px]:h-[40%];
   @apply md:w-full md:h-[40%];
-  @apply lg:h-[40%];
+  @apply lg:h-[35%] xl:w-[90%] xl:mt-5;
 }
 
 /* title */
@@ -49,10 +50,10 @@
 }
 
 .card_title_shoes {
-  @apply text-center text-base mt-12;
+  @apply text-center text-base mt-5;
   @apply md:text-base md:mt-8;
-  @apply lg:text-base lg:mt-3;
-  @apply xl:text-base xl:mt-[2.1rem];
+  @apply lg:text-base lg:mt-7;
+  @apply xl:text-base xl:mt-[2rem];
 }
 
 .card_title_caps {
@@ -73,15 +74,15 @@
 
 .card_info_div_shoes {
   @apply mt-32 absolute flex flex-col justify-center items-center;
-  @apply md:absolute md:mt-14;
-  @apply lg:absolute lg:mt-1;
-  @apply xl:absolute xl:mt-5;
+  @apply md:absolute md:mt-[3.8rem];
+  @apply lg:absolute lg:mt-[1.1rem];
+  @apply xl:absolute xl:mt-4;
 }
 
 .card_info_div_caps {
   @apply mt-32 absolute flex flex-col justify-center items-center;
   @apply md:absolute md:mt-[3.8rem];
-  @apply lg:absolute lg:mt-1;
+  @apply lg:absolute lg:mt-4;
   @apply xl:absolute xl:mt-5;
 }
 

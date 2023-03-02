@@ -1,5 +1,5 @@
 .card {
-  @apply h-[22rem] w-[17rem] border last:border-gray-300 shadow-md m-auto;
+  @apply h-[22rem] w-[17rem] border last:border-gray-300 shadow-md m-auto bg-gray-50;
   @apply min-[375px]:w-[18rem];
   @apply min-[414px]:w-[20rem];
   @apply md:mt-3 md:w-full md:h-[20rem];

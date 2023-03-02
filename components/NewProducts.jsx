@@ -11,7 +11,7 @@ export default function TShirtItem({ product, addToCartHandler }) {
           <Image
             src={product.image}
             alt={product.name}
-            width={200}
+            width={2000}
             height={100}
             priority={true}
             className={
