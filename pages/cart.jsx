@@ -8,7 +8,6 @@ import { Store } from '../utils/Store';
 import dynamic from 'next/dynamic';
 import { toast } from 'react-toastify';
 import allSizes from '../utils/products/size';
-import Cookies from 'js-cookie';
 
 const sizes = allSizes.size;
 

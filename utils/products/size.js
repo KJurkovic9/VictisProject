@@ -24,6 +24,8 @@ const allSizes = {
           xl5: 42,
           xl6: 43,
           xl7: 44,
+          xl8: 45,
+          xl9: 46,
         },
       ],
     },
