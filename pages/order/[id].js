@@ -42,8 +42,6 @@ function OrderScreen() {
       error: '',
     });
 
-  console.log(order);
-
   useEffect(() => {
     const fetchOrder = async () => {
       try {
@@ -89,6 +87,8 @@ function OrderScreen() {
     deliveredAt,
   } = order;
 
+  console.log(orderItems);
+
   function createOrder(data, actions) {
     return actions.order
       .create({
@@ -119,6 +119,16 @@ function OrderScreen() {
   function onError(err) {
     toast.error(getError(err));
   }
+
+  const createCheckoutSession = async (actions) => {
+    axios
+      .post('/api/keys/stripe', { orderItems })
+      .then((res) => {
+        console.log(res);
+        window.location = res.data.sessionURL;
+      })
+      .catch((err) => console.log(err));
+  };
 
   return (
     <Layout title={`Order ${orderId}`}>
@@ -236,13 +246,19 @@ function OrderScreen() {
                     {isPending ? (
                       <div>Loading...</div>
                     ) : (
-                      <div className="w-full">
-                        <PayPalButtons
-                          createOrder={createOrder}
-                          onApprove={onApprove}
-                          onError={onError}
-                        ></PayPalButtons>
-                      </div>
+                      <button
+                        className="primary_button"
+                        onClick={createCheckoutSession}
+                      >
+                        Checkout
+                      </button>
+                      // <div className="w-full">
+                      //   <PayPalButtons
+                      //     createOrder={createOrder}
+                      //     onApprove={onApprove}
+                      //     onError={onError}
+                      //   ></PayPalButtons>
+                      // </div>
                     )}
                     {loadingPay && <div>Loading...</div>}
                   </li>
